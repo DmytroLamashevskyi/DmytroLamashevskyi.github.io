@@ -25,9 +25,9 @@ module.exports = {
 			}
   		},
   		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
+  			lg: 'var(--radius,0.5rem)',
+  			md: 'calc(var(--radius) - 2px, 0.375rem)',
+  			sm: 'calc(var(--radius) - 4px,0.125rem)'
   		}
   	}
   },
