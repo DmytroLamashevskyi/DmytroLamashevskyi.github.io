@@ -59,7 +59,8 @@ const Work = ()=>{
     }
 
     return(
-        <motion.div initial={{opacity:0}} animate={{opacity:1,
+        <motion.div 
+            initial={{opacity:0}} animate={{opacity:1,
             transition:{
                 duration: 2.4,
                 delay: 0.4,
