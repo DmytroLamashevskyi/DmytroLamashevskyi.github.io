@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    output: 'export',
+    images: {
+      unoptimized: true, // Use this if you have issues with image optimization in static export
+    },
+  };
+  
+  export default nextConfig;
