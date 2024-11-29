@@ -12,12 +12,12 @@ const info = [
     {
         icon: <FaPhoneAlt/>,
         title: "Phone",
-        description: "+81123123123"
+        description: "(+81)070-9332-6466"
     },
     {
         icon: <FaEnvelope/>,
         title: "Email",
-        description: "@gmail.com"
+        description: "d.lamashevskyi@gmail.com"
     } 
 ]
 
