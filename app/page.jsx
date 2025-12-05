@@ -17,7 +17,7 @@ const Home = () => {
               Expert in C# Development with varios of technologyes
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/assets/Lamashevskyi_Dmytro_CV_2024_ENG.pdf" download>
+              <a href="/assets/Lamashevskyi_Dmytro_CV_2026_ENG.pdf" download>
                 <Button variant="outline" size="lg" className="uppercase flex items-center gap-2" >
                   <span>Download CV</span>
                   <FiDownload className="text-xl"/>

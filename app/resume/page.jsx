@@ -1,18 +1,53 @@
 "use client";
-import { FaHtml5, FaCss3, FaAws, FaReact, FaDocker } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaDocker,
+  FaWindows,
+  FaWpforms,
+  FaNetworkWired,
+  FaRocket,
+  FaGithub,
+  FaBootstrap,
+  FaSass,FaBrain ,
+} from "react-icons/fa";
+
 import {
   SiUnity,
+  SiAmazonwebservices,
   SiDotnet,
-  SiGithub,
   SiPostgresql,
   SiOculus,
-  SiWindows10,
+  SiRabbitmq,
+  SiMongodb,
+  SiClickhouse,
+  SiMicrosoftsqlserver,
+  SiTypescript,
+  SiNextdotjs,
+  SiDevexpress,
+  SiXunit,
+  SiLangchain,
+  SiOpenai,
+  SiSelenium,
 } from "react-icons/si";
+
+import { TbApi } from "react-icons/tb";
+import { VscAzure } from "react-icons/vsc";
+import { LuSplit } from "react-icons/lu";
+import { MdOutlineTableView } from "react-icons/md";
+import { HiOutlineTruck } from "react-icons/hi";
+import { GrConnect } from "react-icons/gr";
+import { DiRedis } from "react-icons/di";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { GrTest } from "react-icons/gr";
+
+
 
 const about = {
   title: "About me",
   description:
-    "I enjoy playing the guitar, which allows me to express my creativity and unwind after a long day. I'm passionate about manga, enjoying both reading and exploring the unique storytelling styles that different authors bring. Manga has been a source of inspiration for me, fueling my imagination and providing fresh perspectives. Additionally, I love traveling frequently, as it gives me the opportunity to experience new cultures, meet interesting people, and broaden my horizons. These interests help me stay balanced, creative, and open-minded in both my personal and professional life.",
+       "I'm a backend engineer based in Japan, working mostly with .NET, AWS and modern web technologies. I enjoy building reliable systems with clean architecture and clear APIs that are easy to maintain and scale. Outside of work, I recharge by playing the guitar, reading manga and exploring new places. Storytelling in manga and travel both help me stay curious, creative and open-minded — qualities I bring into my engineering work and team collaboration.",
   info: [
     {
       fieldName: "Name",
@@ -105,54 +140,153 @@ const education = {
 
 const skills = {
   title: "My skills",
-  description: "",
+  description:
+    "Tech stack I use for backend, data, cloud, frontend, desktop, testing and AI.",
   skillList: [
+    // Backend, Messaging & APIs
     {
-      icon: <FaHtml5 />,
-      name: "HTML 5",
+      name: "C#, .NET, ASP.NET Core, MVC, Entity Framework",
+      category: "Backend, Messaging & APIs",
+      icon:  <SiDotnet />,
     },
     {
-      icon: <FaCss3 />,
-      name: "CSS 3",
+      name: "REST APIs",
+      category: "Backend, Messaging & APIs",
+      icon: <TbApi/>,
     },
     {
-      icon: <FaReact />,
-      name: "React",
+      name: "RabbitMQ",
+      category: "Backend, Messaging & APIs",
+      icon: <SiRabbitmq />,
     },
+
+    // Data & Storage
     {
-      icon: <FaAws />,
-      name: "AWS",
-    },
-    {
-      icon: <SiDotnet />,
-      name: "DotNet",
-    },
-    {
-      icon: <SiWindows10 />,
-      name: "WPF Desktop App",
-    },
-    {
-      icon: <SiUnity />,
-      name: "Unity 3D",
-    },
-    {
-      icon: <SiGithub />,
-      name: "Github",
-    },
-    {
+      name: "PostgreSQL",
+      category: "Data & Storage",
       icon: <SiPostgresql />,
-      name: "Postgre SQL",
     },
     {
-      icon: <SiOculus />,
-      name: "Oculus VR",
+      name: "MongoDB",
+      category: "Data & Storage",
+      icon: <SiMongodb />,
     },
     {
-      icon: <FaDocker />,
+      name: "ClickHouse",
+      category: "Data & Storage",
+      icon: <SiClickhouse />,
+    },
+    {
+      name: "Redis",
+      category: "Data & Storage",
+      icon: <DiRedis />,
+    },
+
+    // Cloud & DevOps
+    {
+      name: "AWS",
+      category: "Cloud & DevOps",
+      icon: <SiAmazonwebservices/>,
+    },
+    {
+      name: "Azure",
+      category: "Cloud & DevOps",
+      icon: <VscAzure/>,
+    },
+    {
       name: "Docker",
+      category: "Cloud & DevOps",
+      icon: <FaDocker />,
+    },
+    {
+      name: "CI/CD",
+      category: "Cloud & DevOps",
+      icon: <FaRocket />,
+    },
+    {
+      name: "Git",
+      category: "Cloud & DevOps",
+      icon: <FaGithub />,
+    },
+
+    // Front-end
+    {
+      name: "HTML/CSS",
+      category: "Front-end",
+      icon: <FaHtml5 />,
+    },
+    {
+      name: "Bootstrap",
+      category: "Front-end",
+      icon: <FaBootstrap />,
+    },
+    {
+      name: "React",
+      category: "Front-end",
+      icon: <FaReact />,
+    },
+    {
+      name: "TypeScript",
+      category: "Front-end",
+      icon: <SiTypescript />,
+    },
+    {
+      name: "SASS",
+      category: "Front-end",
+      icon: <FaSass />,
+    },
+    {
+      name: "Tailwind",
+      category: "Front-end",
+      icon: <RiTailwindCssFill />,
+    },
+    {
+      name: "Next.js",
+      category: "Front-end",
+      icon: <SiNextdotjs />,
+    },
+
+    // Desktop
+    {
+      name: "WPF",
+      category: "Desktop",
+      icon: <FaWpforms />,
+    },
+    {
+      name: "DevExpress",
+      category: "Desktop",
+      icon: <SiDevexpress />,
+    },
+
+    // Testing & AI
+    {
+      name: "xUnit",
+      category: "Testing & AI",
+      icon: <GrTest />,
+    },
+    {
+      name: "Amazon Bedrock",
+      category: "Testing & AI",
+      icon: <FaBrain  />,
+    },
+    {
+      name: "LangChain",
+      category: "Testing & AI",
+      icon: <SiLangchain />,
+    },
+    {
+      name: "OpenAI",
+      category: "Testing & AI",
+      icon: <SiOpenai />,
+    },
+    {
+      name: "Selenium",
+      category: "Testing & AI",
+      icon: <SiSelenium />,
     },
   ],
 };
+
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {

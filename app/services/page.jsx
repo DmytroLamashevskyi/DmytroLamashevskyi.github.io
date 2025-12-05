@@ -4,33 +4,51 @@ import {BsArrowDownRight} from 'react-icons/bs'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-
 const services = [
-    {
-        num: '01',
-        title: 'Web Development',
-        description: 'Lorem ipsum some description with some text',
-        href: ""
-    },
-    {
-        num: '02',
-        title: 'Desktop Development',
-        description: 'Lorem ipsum some description with some text',
-        href: ""
-    },
-    {
-        num: '03',
-        title: 'Unity3d Development',
-        description: 'Lorem ipsum some description with some text',
-        href: ""
-    },
-    {
-        num: '04',
-        title: 'VR/AR Development',
-        description: 'Lorem ipsum some description with some text',
-        href: ""
-    },
-]
+  {
+    num: '01',
+    title: 'Web Development',
+    description:
+      'Modern web applications with React/TypeScript and .NET backends — from landing pages to complex dashboards.',
+    href: '',
+  },
+  {
+    num: '02',
+    title: 'Desktop Development',
+    description:
+      'Cross-platform desktop tools in .NET/WPF focused on clean UX, performance and easy maintainability.',
+    href: '',
+  },
+  {
+    num: '03',
+    title: 'Unity3D Development',
+    description:
+      'Prototyping and development of games and simulations in Unity3D: gameplay systems, tools and UI.',
+    href: '',
+  },
+  {
+    num: '04',
+    title: 'VR/AR Development',
+    description:
+      'Immersive VR/AR experiences and interactive prototypes built with Unity and modern headset platforms.',
+    href: '',
+  },
+  {
+    num: '05',
+    title: 'AI Development',
+    description:
+      'AI-powered features and services: LLM integration, chatbots, automation and data-driven decision tools.',
+    href: '',
+  },
+  {
+    num: '06',
+    title: 'AWS Cloud Development',
+    description:
+      'Design and deployment of cloud-native architectures on AWS: serverless (Lambda), containers, CI/CD and cost optimization.',
+    href: '',
+  },
+];
+
 
 const Services = ()=>{
     return(

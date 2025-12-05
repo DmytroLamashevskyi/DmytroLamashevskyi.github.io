@@ -14,39 +14,51 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
     {
         num: "01",
-        category: "API",
-        title: "Project 1",
-        desription: "Some long big description of project",
+        category: "Web",
+        title: "Coctail GSAP Website",
+        description: "Animated landing page for a fictional cocktail brand, built with React, TypeScript and GSAP to showcase smooth scroll-based animations and modern UI.",
         stack: [
-            {name:"DotNet"}, {name: "ASP.NET"}, {name: "AWS"}
+            {name: "HTML"}, {name: "CSS"}, {name:"React"}, {name: "GSAP"}, {name: "Tailwind"}, {name: "TypeScript"}, 
         ],
-        image: '/assets/work/thumb1.png',
-        live:"",
-        github: "",
+        image: '/assets/work/Coctails.png',
+        live:"https://dmytrolamashevskyi.github.io/coctail-gsap-website",
+        github: "https://github.com/DmytroLamashevskyi/coctail-gsap-website",
     },
     {
         num: "02",
-        category: "API",
-        title: "Project 2",
-        desription: "Some long big description of project",
+        category: "Web",
+        title: "Computer Service Front",
+        description: "Simple marketing website for a computer repair service, focused on clean layout, clear service sections and responsive design.",
         stack: [
-            {name:"DotNet"}, {name: "ASP.NET"}, {name: "AWS"}
+            {name: "HTML"}, {name: "CSS"}, 
         ],
-        image: '/assets/work/thumb2.png',
-        live:"",
-        github: "",
+        image: '/assets/work/ComputerService.png',
+        live:"https://dmytrolamashevskyi.github.io/computer-service-front/",
+        github: "https://github.com/DmytroLamashevskyi/computer-service-front",
     },
     {
         num: "03",
-        category: "API",
-        title: "Project 3",
-        desription: "Some long big description of project",
+        category: "Web",
+        title: "Premium Cars",
+        description: "Landing page concept for a premium car brand, built with Angular and vanilla JS to practice component-based UI and basic routing.",
         stack: [
-            {name:"DotNet"}, {name: "ASP.NET"}, {name: "AWS"}
+            {name: "HTML"}, {name: "CSS"}, {name: "JS"}, {name: "Angular"}, 
         ],
-        image: '/assets/work/thumb3.png',
-        live:"",
-        github: "",
+        image: '/assets/work/Cars.png',
+        live:"https://github.com/DmytroLamashevskyi/itlogia-premium-cars",
+        github: "https://github.com/DmytroLamashevskyi/itlogia-premium-cars",
+    },
+    {
+        num: "04",
+        category: "Desktop",
+        title: "Service Monitoring",
+        description: "A desktop application for monitoring service status, built with WPF and .NET to manage company services and their statuses.",
+        stack: [
+            {name: "WPF"}, {name: ".NET"}, 
+        ],
+        image: '/assets/work/ServiceMonitor.png',
+        live: null,
+        github: "https://github.com/DmytroLamashevskyi/ServiceMonitoring",
     },
 ]
 
@@ -77,7 +89,7 @@ const Work = ()=>{
                                 {project.num} 
                             </div>
                             <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} project</h2>
-                            <p className="text-white/60">{project.desription}</p>
+                            <p className="text-white/60">{project.description}</p>
                             <ul className="flex gap-4">
                                 {
                                     project.stack.map((item,index)=>{
@@ -92,7 +104,7 @@ const Work = ()=>{
                             </ul>
                             <div className="border border-white/20"></div>
                             <div className="flex items-center gap-4">
-                                <Link href={project.live}>
+                                {project.live && <Link href={project.live}>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -103,7 +115,7 @@ const Work = ()=>{
                                             </TooltipContent>
                                         </Tooltip>
                                     </TooltipProvider>
-                                </Link>
+                                </Link>}
                                 <Link href={project.github}>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
