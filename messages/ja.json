@@ -1,0 +1,201 @@
+{
+  "Header": {
+    "name": "Lamashevskyi",
+    "initial": "D",
+    "hire": "採用する"
+  },
+  "Nav": {
+    "home": "ホーム",
+    "services": "サービス",
+    "resume": "履歴書",
+    "work": "実績",
+    "contact": "お問い合わせ"
+  },
+  "Home": {
+    "role": "バックエンドエンジニア | .NET & AWS",
+    "greeting": "こんにちは、",
+    "fullName": "ラマシェフスキー・ドミトロ",
+    "tagline": "スケーラブルなAPI、マイクロサービス、クラウドネイティブシステムを設計。スタートアップからエンタープライズまで6年以上の実務経験。",
+    "downloadCv": "履歴書をダウンロード",
+    "downloadCvJp": "職務経歴書をダウンロード"
+  },
+  "Stats": {
+    "experience": "年の経験",
+    "technologies": "習得した技術",
+    "projects": "完了したプロジェクト"
+  },
+  "Services": {
+    "items": [
+      {
+        "num": "01",
+        "title": "バックエンド・API開発",
+        "description": ".NET/C#によるスケーラブルなREST API、マイクロサービスアーキテクチャ、分散システム。設計から本番運用・障害対応・パフォーマンスチューニングまで。"
+      },
+      {
+        "num": "02",
+        "title": "AWSクラウドインフラ",
+        "description": "AWS上のクラウドネイティブアーキテクチャ：S3、Lambda、Cognito、CloudWatch。インフラ設計、CI/CDパイプライン、コスト最適化、本番モニタリング。"
+      },
+      {
+        "num": "03",
+        "title": "AI統合",
+        "description": "AI搭載のバックエンド機能：LLM統合、データベクトル化、埋め込み検索、チャットボット、自動化。LangChain、OpenAI、Amazon Bedrockを活用。"
+      },
+      {
+        "num": "04",
+        "title": "Web・デスクトップ開発",
+        "description": "React/TypeScriptと.NETバックエンドによるフルスタックWebアプリ。WPFによるエンタープライズデスクトップツール。セキュリティ・テスト性・保守性重視。"
+      }
+    ]
+  },
+  "Resume": {
+    "tabs": {
+      "experience": "経験",
+      "education": "学歴",
+      "skills": "スキル",
+      "about": "自己紹介"
+    },
+    "about": {
+      "title": "自己紹介",
+      "description": "日本在住のバックエンドエンジニア（6年以上の経験）。スタートアップにてマイクロサービスベースの新規プロダクトのバックエンド設計およびAWSインフラ構築をリードし、コンセプトから本番運用まで導きました。クリーンでテスト可能なコード、堅牢なデータモデル、信頼性の高いサービス間連携を重視。プロダクト・フロントエンド・DevOpsチームと密接に連携し、要件を信頼性の高いシステムへ変換します。",
+      "fields": {
+        "name": "名前",
+        "phone": "電話番号",
+        "experience": "経験年数",
+        "email": "メール",
+        "country": "所在地",
+        "languages": "言語",
+        "japanese": "日本語"
+      },
+      "values": {
+        "name": "ラマシェフスキー・ドミトロ",
+        "phone": "(+81)070-9332-6466",
+        "experience": "6年以上",
+        "email": "d.lamashevskyi@gmail.com",
+        "country": "日本・香川県",
+        "languages": "英語（上級）、ウクライナ語（ネイティブ）、ロシア語（ネイティブ）、ポーランド語（中上級）",
+        "japanese": "JLPT N4"
+      }
+    },
+    "experience": {
+      "title": "職務経歴",
+      "description": "スタートアップ、ゲーム、エンタープライズ、公共安全など多様な業界で、バックエンドシステム・API・クラウドネイティブアプリケーションを6年以上構築。",
+      "items": [
+        {
+          "company": "本気モード（スタートアップ）",
+          "position": "フルスタック .NET開発者",
+          "duration": "2024.06 - 現在",
+          "highlight": "バックエンド設計・AWSインフラをコンセプトから本番まで主導。SQLエンジン開発（レポート速度30-40%向上）、PDF/バーコード自動化（処理時間50%短縮）。AI/MLコンポーネント統合。"
+        },
+        {
+          "company": "Devox Software",
+          "position": "バックエンド開発者",
+          "duration": "2023.02 - 2024.05",
+          "highlight": "AWS（EC2、S3、Lambda）上のASP.NET Coreマイクロサービス。技術ドキュメント作成によるオンボーディング効率化。クリティカルサービスのパフォーマンスチューニング。"
+        },
+        {
+          "company": "Cyver.io",
+          "position": ".NET開発者",
+          "duration": "2022.12 - 2023.01",
+          "highlight": "ペネトレーションテストプラットフォームのコア機能開発。ASP.NET + Angularフルスタック。スケーラビリティ・セキュリティのアーキテクチャ設計協議。"
+        },
+        {
+          "company": "Whimsy Games",
+          "position": "バックエンド開発者",
+          "duration": "2021.04 - 2022.09",
+          "highlight": "数千人同時接続のマルチプレイヤーゲーム向けスケーラブルバックエンド。MongoDB、Redis、AWS S3によるRESTful API。運用ダッシュボード開発。"
+        },
+        {
+          "company": "Motorola Solutions",
+          "position": "デスクトップWPF開発者",
+          "duration": "2021.12 - 2022.10",
+          "highlight": "米国40以上の郡の緊急サービス向けミッションクリティカルアプリ。データ暗号化、3000件超テストケース安定化。L2/L3本番サポート。"
+        },
+        {
+          "company": "Sollers Consulting",
+          "position": "C#開発者",
+          "duration": "2020.02 - 2021.10",
+          "highlight": "自動車クライアント向け50件超のカスタムBIレポート。SQLクエリ最適化（パフォーマンス30-40%向上）。技術ドキュメント・開発者トレーニングによるオンボーディング時間短縮。"
+        }
+      ]
+    },
+    "education": {
+      "title": "学歴",
+      "description": "ウクライナ、ポーランド、中国の3大学でコンピュータサイエンスを学習。ソフトウェアエンジニアリング、AI、データ分析に注力。",
+      "items": [
+        { "institution": "浙江師範大学", "degree": "コンピュータサイエンス修士", "duration": "2021.09 - 2024.06" },
+        { "institution": "ルブリン工科大学", "degree": "コンピュータサイエンス学士", "duration": "2015.10 - 2020.03" },
+        { "institution": "チェルニヒウ国立工科大学", "degree": "コンピュータエンジニアリング学士", "duration": "2015.09 - 2018.06" }
+      ]
+    },
+    "skills": {
+      "title": "スキル",
+      "description": "バックエンド、データ、クラウド、フロントエンド、デスクトップ、テスト、AIに使用する技術スタック。",
+      "categories": {
+        "backend": "バックエンド・メッセージング・API",
+        "data": "データ・ストレージ",
+        "cloud": "クラウド・DevOps",
+        "frontend": "フロントエンド",
+        "desktop": "デスクトップ",
+        "testing": "テスト・AI"
+      }
+    }
+  },
+  "Work": {
+    "liveProject": "ライブデモ",
+    "githubRepo": "GitHubリポジトリ",
+    "project": "プロジェクト",
+    "items": [
+      {
+        "num": "01",
+        "category": "Web",
+        "title": "Cocktail GSAPウェブサイト",
+        "description": "架空のカクテルブランドのアニメーションランディングページ。React、TypeScript、GSAPを使用し、スムーズなスクロールベースのアニメーションとモダンなUIを実現。"
+      },
+      {
+        "num": "02",
+        "category": "Web",
+        "title": "コンピューターサービス",
+        "description": "コンピュータ修理サービスのシンプルなマーケティングサイト。クリーンなレイアウト、明確なサービスセクション、レスポンシブデザインに重点。"
+      },
+      {
+        "num": "03",
+        "category": "Web",
+        "title": "プレミアムカー",
+        "description": "プレミアムカーブランドのランディングページコンセプト。AngularとバニラJSでコンポーネントベースのUIと基本ルーティングを実践。"
+      },
+      {
+        "num": "04",
+        "category": "デスクトップ",
+        "title": "サービスモニタリング",
+        "description": "サービスステータスを監視するデスクトップアプリケーション。WPFと.NETで構築し、会社のサービスとそのステータスを管理。"
+      }
+    ]
+  },
+  "Contact": {
+    "title": "一緒に働きましょう",
+    "description": "以下のフォームにご記入ください。できるだけ早くご連絡いたします。",
+    "firstname": "名",
+    "lastname": "姓",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "selectService": "サービスを選択",
+    "serviceWeb": "バックエンド・API開発",
+    "serviceVr": "AI統合",
+    "serviceDesktop": "Web・デスクトップ開発",
+    "serviceCloud": "AWSクラウドインフラ",
+    "message": "メッセージを入力してください",
+    "send": "メッセージを送信",
+    "sending": "送信中...",
+    "success": "メッセージが送信されました！",
+    "error": "エラーが発生しました。もう一度お試しください。",
+    "infoPhone": "電話番号",
+    "infoEmail": "メール"
+  },
+  "NotFound": {
+    "code": "404",
+    "title": "ページが見つかりません",
+    "description": "お探しのページは存在しないか、移動されました。",
+    "back": "ホームに戻る"
+  }
+}

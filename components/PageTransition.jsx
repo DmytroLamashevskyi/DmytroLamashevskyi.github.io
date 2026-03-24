@@ -16,8 +16,8 @@ const PageTransition = ({children}) => {
                 opacity:0,
                 transition:
                 {
-                    delay: 1,
-                    duration: 0.4, 
+                    delay: 0.6,
+                    duration: 0.3,
                     ease:'easeInOut'
                 }
             }} className="h-screen w-screen fixed bg-[#3f3d3d] top-0 pointer-events-none"/>

@@ -1,12 +1,16 @@
+import createNextIntlPlugin from "next-intl/plugin";
+
+const withNextIntl = createNextIntlPlugin("./i18n/request.js");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  distDir: 'next',
+  output: "export",
+  distDir: "next",
   images: {
-    unoptimized: true, // Use this if you have issues with image optimization in static export
+    unoptimized: true,
   },
-  basePath: '', // No base path for GitHub Pages root deployment
-  assetPrefix: '', // Leave empty for root-level deployment
+  basePath: "",
+  assetPrefix: "",
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

@@ -11,7 +11,7 @@ const Photo = () => {
         animate={{
             opacity:1,
             transition: {
-                delay: 2, duration: 0.4, ease: "easeIn"
+                delay: 0.8, duration: 0.4, ease: "easeIn"
             },
         }
     }>
@@ -20,11 +20,11 @@ const Photo = () => {
             animate={{
                 opacity:1,
                 transition: {
-                    delay: 2.4, duration: 0.4, ease: "easeInOut"
+                    delay: 1.0, duration: 0.4, ease: "easeInOut"
                 },
             }
         }>
-            <Image src="/assets/photo.png" priority quality={100} fill alt="" className="object-contain"/>
+            <Image src="/assets/photo.png" priority quality={100} fill alt="Dmytro Lamashevskyi profile photo" className="object-contain"/>
         </motion.div>
 
         <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]" 

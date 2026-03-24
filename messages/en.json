@@ -1,0 +1,201 @@
+{
+  "Header": {
+    "name": "Lamashevskyi",
+    "initial": "D",
+    "hire": "Hire Me"
+  },
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "resume": "Resume",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "Home": {
+    "role": "Backend Engineer | .NET & AWS",
+    "greeting": "Hello I'm",
+    "fullName": "Dmytro Lamashevskyi",
+    "tagline": "I design scalable APIs, microservices and cloud-native systems. 6+ years shipping production code from startups to enterprise.",
+    "downloadCv": "Download CV",
+    "downloadCvJp": "Download CV (JP)"
+  },
+  "Stats": {
+    "experience": "Years of experience",
+    "technologies": "Technologies mastered",
+    "projects": "Projects shipped"
+  },
+  "Services": {
+    "items": [
+      {
+        "num": "01",
+        "title": "Backend & API Development",
+        "description": "Scalable REST APIs, microservice architectures and distributed systems with .NET/C#. From greenfield design to production support, incident triage and performance tuning."
+      },
+      {
+        "num": "02",
+        "title": "AWS Cloud Infrastructure",
+        "description": "Cloud-native architectures on AWS: S3, Lambda, Cognito, CloudWatch. Infrastructure design, CI/CD pipelines, cost optimization and production monitoring."
+      },
+      {
+        "num": "03",
+        "title": "AI Integration",
+        "description": "AI-powered backend features: LLM integration, data vectorization, embedding search, chatbots and automation using LangChain, OpenAI and Amazon Bedrock."
+      },
+      {
+        "num": "04",
+        "title": "Web & Desktop Development",
+        "description": "Full-stack web apps with React/TypeScript and .NET backends. Enterprise desktop tools in WPF with focus on security, testability and maintainability."
+      }
+    ]
+  },
+  "Resume": {
+    "tabs": {
+      "experience": "Experience",
+      "education": "Education",
+      "skills": "Skills",
+      "about": "About me"
+    },
+    "about": {
+      "title": "About me",
+      "description": "Backend engineer based in Japan with 6+ years of experience. I led the backend design and AWS infrastructure setup for a greenfield microservice product, taking it from concept to production. I focus on clean, testable code, robust data models, and reliable integrations between distributed services. I work closely with product, front-end and DevOps teams to translate requirements into reliable systems.",
+      "fields": {
+        "name": "Name",
+        "phone": "Phone",
+        "experience": "Experience",
+        "email": "Email",
+        "country": "Country",
+        "languages": "Languages",
+        "japanese": "Japanese"
+      },
+      "values": {
+        "name": "Dmytro Lamashevskyi",
+        "phone": "(+81)070-9332-6466",
+        "experience": "6+ Years",
+        "email": "d.lamashevskyi@gmail.com",
+        "country": "Japan, Kagawa",
+        "languages": "English (Upper-Intermediate), Ukrainian (Native), Russian (Native), Polish (Upper-Intermediate)",
+        "japanese": "JLPT N4"
+      }
+    },
+    "experience": {
+      "title": "My Experience",
+      "description": "Over 6 years building backend systems, APIs and cloud-native applications across startups, gaming, enterprise and public safety industries.",
+      "items": [
+        {
+          "company": "Honki Mode (Startup)",
+          "position": "Full-Stack .NET Developer",
+          "duration": "2024.06 - present",
+          "highlight": "Led backend design & AWS infra from concept to production. Built SQL engine (+30-40% report speed), PDF/barcode automation (-50% processing time). Integrated AI/ML components."
+        },
+        {
+          "company": "Devox Software",
+          "position": "Back-end Developer",
+          "duration": "2023.02 - 2024.05",
+          "highlight": "Microservices with ASP.NET Core on AWS (EC2, S3, Lambda). Created technical docs that improved onboarding speed. Performance tuning for critical services."
+        },
+        {
+          "company": "Cyver.io",
+          "position": ".NET Developer",
+          "duration": "2022.12 - 2023.01",
+          "highlight": "Core features for a penetration testing platform. Full-stack ASP.NET + Angular. Architectural discussions on scalability and security."
+        },
+        {
+          "company": "Whimsy Games",
+          "position": "Back-end Developer",
+          "duration": "2021.04 - 2022.09",
+          "highlight": "Scalable backend for multiplayer gaming (thousands of concurrent players). RESTful APIs with MongoDB, Redis, AWS S3. Admin dashboards for operations."
+        },
+        {
+          "company": "Motorola Solutions",
+          "position": "Desktop WPF Developer",
+          "duration": "2021.12 - 2022.10",
+          "highlight": "Mission-critical app for emergency services across 40+ U.S. counties. Data encryption, 3000+ test cases stabilization. L2/L3 production support."
+        },
+        {
+          "company": "Sollers Consulting",
+          "position": "C# Developer",
+          "duration": "2020.02 - 2021.10",
+          "highlight": "50+ custom BI reports for automotive clients. Optimized SQL queries (+30-40% performance). Technical docs and developer training that reduced onboarding time."
+        }
+      ]
+    },
+    "education": {
+      "title": "My Education",
+      "description": "Computer Science foundation across three universities in Ukraine, Poland and China, with focus on software engineering, AI and data analytics.",
+      "items": [
+        { "institution": "Zhejiang Normal University", "degree": "Master of Computer Science", "duration": "2021.09 - 2024.06" },
+        { "institution": "Lublin University of Technology", "degree": "Bachelor of Computer Science", "duration": "2015.10 - 2020.03" },
+        { "institution": "Chernihiv National University of Technology", "degree": "Bachelor of Computer Engineering", "duration": "2015.09 - 2018.06" }
+      ]
+    },
+    "skills": {
+      "title": "My skills",
+      "description": "Tech stack I use for backend, data, cloud, frontend, desktop, testing and AI.",
+      "categories": {
+        "backend": "Backend, Messaging & APIs",
+        "data": "Data & Storage",
+        "cloud": "Cloud & DevOps",
+        "frontend": "Front-end",
+        "desktop": "Desktop",
+        "testing": "Testing & AI"
+      }
+    }
+  },
+  "Work": {
+    "liveProject": "Live Project",
+    "githubRepo": "Github Repo",
+    "project": "project",
+    "items": [
+      {
+        "num": "01",
+        "category": "Web",
+        "title": "Cocktail GSAP Website",
+        "description": "Animated landing page for a fictional cocktail brand, built with React, TypeScript and GSAP to showcase smooth scroll-based animations and modern UI."
+      },
+      {
+        "num": "02",
+        "category": "Web",
+        "title": "Computer Service Front",
+        "description": "Simple marketing website for a computer repair service, focused on clean layout, clear service sections and responsive design."
+      },
+      {
+        "num": "03",
+        "category": "Web",
+        "title": "Premium Cars",
+        "description": "Landing page concept for a premium car brand, built with Angular and vanilla JS to practice component-based UI and basic routing."
+      },
+      {
+        "num": "04",
+        "category": "Desktop",
+        "title": "Service Monitoring",
+        "description": "A desktop application for monitoring service status, built with WPF and .NET to manage company services and their statuses."
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Lets work together",
+    "description": "Fill out the form below and I will get back to you as soon as possible.",
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "email": "Email address",
+    "phone": "Phone number",
+    "selectService": "Select a service",
+    "serviceWeb": "Backend & API Development",
+    "serviceVr": "AI Integration",
+    "serviceDesktop": "Web & Desktop Development",
+    "serviceCloud": "AWS Cloud Infrastructure",
+    "message": "Type your message here",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Something went wrong. Please try again.",
+    "infoPhone": "Phone",
+    "infoEmail": "Email"
+  },
+  "NotFound": {
+    "code": "404",
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "back": "Back to Home"
+  }
+}
