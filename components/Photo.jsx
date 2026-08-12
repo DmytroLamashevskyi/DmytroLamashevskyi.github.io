@@ -17,13 +17,13 @@ const Photo = () => {
       <div className="absolute inset-0 rotate-3 rounded-[2.5rem] border border-accent/25 bg-accent/[0.04]" />
       <div className="absolute inset-3 overflow-hidden rounded-[2.25rem] border border-white/10 bg-[#202027] shadow-2xl">
         <Image
-          src="/assets/photo.png"
+          src="/assets/photo.webp"
           priority
           quality={95}
           fill
           sizes="(max-width: 1199px) 310px, 470px"
           alt="Dmytro Lamashevskyi"
-          className="object-contain object-bottom"
+          className="object-cover object-[40%_center]"
         />
       </div>
       <div className="absolute -bottom-3 -left-3 rounded-2xl border border-white/10 bg-primary/90 px-4 py-3 text-xs text-white/60 shadow-xl backdrop-blur">
