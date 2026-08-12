@@ -1,27 +1,84 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
 
 @layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply min-h-screen font-primary bg-primary text-white leading-relaxed antialiased;
+    background-image:
+      radial-gradient(circle at 12% 8%, rgb(102 247 191 / 0.09), transparent 27rem),
+      radial-gradient(circle at 88% 24%, rgb(58 104 255 / 0.08), transparent 30rem),
+      linear-gradient(180deg, #15151a 0%, #1c1c22 45%, #15151a 100%);
+    background-attachment: fixed;
   }
+
+  ::selection {
+    color: #111318;
+    background: #66f7bf;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  [role="tab"] {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary;
+  }
+
   .h1 {
-    @apply text-[36px] sm:text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+    @apply text-[38px] sm:text-[52px] xl:text-[72px] leading-[1.04] font-semibold tracking-[-0.045em];
   }
+
   .h2 {
-    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+    @apply text-[34px] xl:text-[48px] leading-[1.08] font-semibold tracking-[-0.035em];
   }
+
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
 
   .text-outline {
-    -webkit-text-stroke: 1px #ffffff
+    -webkit-text-stroke: 1px #ffffff;
   }
-  
+
   .text-outline-hover {
-    -webkit-text-stroke: 1px #00ff99
+    -webkit-text-stroke: 1px #66f7bf;
   }
-  
+}
+
+@layer components {
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-accent;
+  }
+
+  .surface-card {
+    @apply rounded-2xl border border-white/10 bg-white/[0.035] shadow-[0_24px_80px_rgba(0,0,0,0.18)] backdrop-blur-sm;
+  }
+
+  .tech-pill {
+    @apply rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/70;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -1,58 +1,51 @@
 "use client";
 
-import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { motion, useReducedMotion } from "framer-motion";
+import { BsArrowUpRight } from "react-icons/bs";
+import { useLocale, useTranslations } from "next-intl";
 
 const Services = () => {
   const t = useTranslations("Services");
-
-  const services = Array.from({ length: 4 }, (_, i) => ({
-    num: t(`items.${i}.num`),
-    title: t(`items.${i}.title`),
-    description: t(`items.${i}.description`),
-    href: "",
-  }));
+  const locale = useLocale();
+  const reduceMotion = useReducedMotion();
+  const services = t.raw("items");
 
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
+    <section className="py-14 xl:py-20">
       <div className="container mx-auto">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { delay: 1.0, duration: 0.4, ease: "easeIn" },
-          }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
-        >
-          {services.map((service, index) => {
-            return (
-              <div
-                key={index}
-                className="flex-1 flex flex-col justify-center gap-6 group"
-              >
-                <div className="w-full flex justify-between items-center">
-                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
-                    {service.num}
-                  </div>
-                  <Link
-                    href={service.href}
-                    className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500
-                    flex justify-center items-center hover:-rotate-45"
-                  >
-                    <BsArrowDownRight className="text-primary text-3xl" />
-                  </Link>
-                </div>
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
-                  {service.title}
-                </h2>
-                <p className="text-white/60">{service.description}</p>
-                <div className="border-b border-white/20 w-full"></div>
+        <div className="mb-12 max-w-3xl">
+          <span className="eyebrow">{t("eyebrow")}</span>
+          <h1 className="h2 mb-5 mt-4">{t("title")}</h1>
+          <p className="text-white/55">{t("description")}</p>
+        </div>
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+          {services.map((service, index) => (
+            <motion.article
+              key={service.num}
+              initial={reduceMotion ? false : { opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: reduceMotion ? 0 : 0.38, delay: index * 0.06 }}
+              className="surface-card group flex min-h-[300px] flex-col p-7 transition-colors hover:border-accent/35 sm:p-9"
+            >
+              <div className="mb-auto flex items-start justify-between">
+                <span className="text-sm font-bold text-accent">{service.num}</span>
+                <Link
+                  href={`/${locale}/contact`}
+                  aria-label={`${t("cta")}: ${service.title}`}
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/70 transition-all group-hover:border-accent group-hover:bg-accent group-hover:text-primary"
+                >
+                  <BsArrowUpRight />
+                </Link>
               </div>
-            );
-          })}
-        </motion.div>
+              <h2 className="mt-10 text-2xl font-bold leading-tight">{service.title}</h2>
+              <p className="mt-4 text-sm leading-7 text-white/50">{service.description}</p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {service.focus.map((item) => <span key={item} className="tech-pill">{item}</span>)}
+              </div>
+            </motion.article>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,201 +1,178 @@
 {
   "Header": {
-    "name": "Lamashevskyi",
-    "initial": "D",
-    "hire": "採用する"
+    "hire": "お問い合わせ",
+    "homeLabel": "ラマシェフスキー・ドミトロ - ホーム",
+    "menuLabel": "ナビゲーションを開く"
   },
   "Nav": {
+    "label": "メインナビゲーション",
     "home": "ホーム",
-    "services": "サービス",
-    "resume": "履歴書",
-    "work": "実績",
+    "services": "専門分野",
+    "resume": "経歴",
+    "work": "プロジェクト",
     "contact": "お問い合わせ"
   },
   "Home": {
-    "role": "バックエンドエンジニア | .NET & AWS",
-    "greeting": "こんにちは、",
-    "fullName": "ラマシェフスキー・ドミトロ",
-    "tagline": "スケーラブルなAPI、マイクロサービス、クラウドネイティブシステムを設計。スタートアップからエンタープライズまで6年以上の実務経験。",
-    "downloadCv": "履歴書をダウンロード",
-    "downloadCvJp": "職務経歴書をダウンロード"
+    "eyebrow": "日本在住 - シニアエンジニア職を検討中",
+    "greeting": "実運用に耐える",
+    "fullName": "システムを設計・実装します。",
+    "role": "シニアソフトウェアエンジニア | ソリューションアーキテクト | クラウド・AIシステム",
+    "tagline": "分散バックエンド、クラウド、データ集約型システムを設計・実装し、実際の価値につながる場面でAIを統合します。スタートアップ、エンタープライズ、顧客別ソリューションで6年以上の実務経験があります。",
+    "capabilities": [".NET・バックエンド設計", "AWS・分散システム", "データ基盤", "生成AI活用", "レガシー刷新"],
+    "downloadMasterCv": "英文Master CV",
+    "downloadJapaneseCv": "日本語CVをダウンロード",
+    "viewWork": "プロジェクトを見る"
   },
   "Stats": {
-    "experience": "年の経験",
-    "technologies": "習得した技術",
-    "projects": "完了したプロジェクト"
+    "analytics": "分析処理の更新時間",
+    "analyticsNote": "POSプラットフォームの一部処理を約1〜2分から短縮。",
+    "exports": "CSVストリーミング出力",
+    "exportsNote": "複数サービスのデータをメモリ使用量を抑えてバックグラウンド生成。",
+    "cloud": "AWS月額削減見込み",
+    "cloudNote": "当初のインフラ見積もりと比較した継続的な削減額。"
   },
   "Services": {
+    "eyebrow": "専門分野",
+    "title": "アーキテクチャ判断から実装・運用まで",
+    "description": "バックエンド、クラウド基盤、データシステム、AI活用を横断し、コスト、セキュリティ境界、保守性を意識してハンズオンで取り組みます。",
+    "cta": "相談する",
     "items": [
       {
         "num": "01",
-        "title": "バックエンド・API開発",
-        "description": ".NET/C#によるスケーラブルなREST API、マイクロサービスアーキテクチャ、分散システム。設計から本番運用・障害対応・パフォーマンスチューニングまで。"
+        "title": "バックエンド・分散システム",
+        "description": "明確なサービス境界、API、非同期処理、メッセージング、運用診断を備えた新規・既存プラットフォームを構築します。",
+        "focus": ["C# / .NET", "REST API", "RabbitMQ", "バックグラウンド処理"]
       },
       {
         "num": "02",
-        "title": "AWSクラウドインフラ",
-        "description": "AWS上のクラウドネイティブアーキテクチャ：S3、Lambda、Cognito、CloudWatch。インフラ設計、CI/CDパイプライン、コスト最適化、本番モニタリング。"
+        "title": "AWS・クラウドアーキテクチャ",
+        "description": "サーバーレスおよびコンテナ型AWSシステム、認証、可観測性、実際の負荷とコストに基づくインフラ最適化に対応します。",
+        "focus": ["Lambda", "API Gateway", "Cognito", "EKS / EC2", "CloudWatch"]
       },
       {
         "num": "03",
-        "title": "AI統合",
-        "description": "AI搭載のバックエンド機能：LLM統合、データベクトル化、埋め込み検索、チャットボット、自動化。LangChain、OpenAI、Amazon Bedrockを活用。"
+        "title": "データ・パフォーマンス",
+        "description": "トランザクション・分析データ、制約付きクエリ、キャッシュ、バッチ処理、大容量出力、複数データストアの性能改善を設計します。",
+        "focus": ["PostgreSQL", "ClickHouse", "Redis", "SQL Server"]
       },
       {
         "num": "04",
-        "title": "Web・デスクトップ開発",
-        "description": "React/TypeScriptと.NETバックエンドによるフルスタックWebアプリ。WPFによるエンタープライズデスクトップツール。セキュリティ・テスト性・保守性重視。"
+        "title": "AIソリューション",
+        "description": "RAG、AIエージェント、ツール呼び出し、MCP、音声認識、ローカル・クラウドLLMを活用し、試作と本番を明確に区別して評価します。",
+        "focus": ["Amazon Bedrock", "RAG", "MCP", "whisper.cpp", "llama.cpp"]
       }
     ]
   },
   "Resume": {
-    "tabs": {
-      "experience": "経験",
-      "education": "学歴",
-      "skills": "スキル",
-      "about": "自己紹介"
-    },
+    "eyebrow": "職務プロフィール",
+    "title": "肩書きではなく、システムで積み上げた経験",
+    "description": "4ページの英文Master CVを要約し、本番プラットフォーム、顧客別ソリューション、エンタープライズ開発、近年のAIアーキテクチャ経験を紹介します。",
+    "downloadMaster": "英文Master CV",
+    "downloadJapanese": "日本語CVをダウンロード",
     "about": {
-      "title": "自己紹介",
-      "description": "日本在住のバックエンドエンジニア（6年以上の経験）。スタートアップにてマイクロサービスベースの新規プロダクトのバックエンド設計およびAWSインフラ構築をリードし、コンセプトから本番運用まで導きました。クリーンでテスト可能なコード、堅牢なデータモデル、信頼性の高いサービス間連携を重視。プロダクト・フロントエンド・DevOpsチームと密接に連携し、要件を信頼性の高いシステムへ変換します。",
-      "fields": {
-        "name": "名前",
-        "phone": "電話番号",
-        "experience": "経験年数",
-        "email": "メール",
-        "country": "所在地",
-        "languages": "言語",
-        "japanese": "日本語"
-      },
-      "values": {
-        "name": "ラマシェフスキー・ドミトロ",
-        "phone": "(+81)070-9332-6466",
-        "experience": "6年以上",
-        "email": "d.lamashevskyi@gmail.com",
-        "country": "日本・香川県",
-        "languages": "英語（上級）、ウクライナ語（ネイティブ）、ロシア語（ネイティブ）、ポーランド語（中上級）",
-        "japanese": "JLPT N4"
-      }
+      "title": "現在のポジショニング",
+      "description": "香川県在住のシニアソフトウェアエンジニア／ソリューションアーキテクトです。専門の中心はバックエンド、分散システム、クラウドで、AIは近年加わった実践分野です。",
+      "highlights": ["6年以上の実務経験", "設計と実装の両方に対応", "英語・ポーランド語・ウクライナ語・ロシア語・日本語N4"]
     },
     "experience": {
       "title": "職務経歴",
-      "description": "スタートアップ、ゲーム、エンタープライズ、公共安全など多様な業界で、バックエンドシステム・API・クラウドネイティブアプリケーションを6年以上構築。",
       "items": [
         {
-          "company": "本気モード（スタートアップ）",
-          "position": "フルスタック .NET開発者",
-          "duration": "2024.06 - 現在",
-          "highlight": "バックエンド設計・AWSインフラをコンセプトから本番まで主導。SQLエンジン開発（レポート速度30-40%向上）、PDF/バーコード自動化（処理時間50%短縮）。AI/MLコンポーネント統合。"
+          "company": "株式会社本気モード - 日本",
+          "position": "バックエンド／フルスタック開発・アーキテクチャ貢献",
+          "duration": "2024年6月 - 現在",
+          "highlight": "POS管理アプリを新規構築し、ClickHouse分析、約300MBのストリーミング出力、Cognitoセッション、RabbitMQ連携を設計・実装。EKS/EC2最適化では当初見積もり比で月約1,300米ドルの継続削減を見込みました。顧客別の業務自動化・レガシー刷新にも従事しています。"
+        },
+        {
+          "company": "株式会社本気モード - 商用可能性検証プロトタイプ",
+          "position": "店舗サポート生成AIチャットボット - 試作全体を担当",
+          "duration": "2024年11月 - 2025年2月",
+          "highlight": "React、.NET Lambda、Amazon Bedrockを用いたRAG・ツール呼び出し試作を設計・実装。モデル制御パラメータにユーザーIDを委ねる信頼境界の問題を特定し、検索品質、セキュリティ、費用対効果を踏まえて本番化しない判断を支援しました。"
         },
         {
           "company": "Devox Software",
           "position": "バックエンド開発者",
-          "duration": "2023.02 - 2024.05",
-          "highlight": "AWS（EC2、S3、Lambda）上のASP.NET Coreマイクロサービス。技術ドキュメント作成によるオンボーディング効率化。クリティカルサービスのパフォーマンスチューニング。"
-        },
-        {
-          "company": "Cyver.io",
-          "position": ".NET開発者",
-          "duration": "2022.12 - 2023.01",
-          "highlight": "ペネトレーションテストプラットフォームのコア機能開発。ASP.NET + Angularフルスタック。スケーラビリティ・セキュリティのアーキテクチャ設計協議。"
-        },
-        {
-          "company": "Whimsy Games",
-          "position": "バックエンド開発者",
-          "duration": "2021.04 - 2022.09",
-          "highlight": "数千人同時接続のマルチプレイヤーゲーム向けスケーラブルバックエンド。MongoDB、Redis、AWS S3によるRESTful API。運用ダッシュボード開発。"
+          "duration": "2023年2月 - 2024年5月",
+          "highlight": "英国大学出願プラットフォームのAPI・マイクロサービスを開発。バックエンドとフロントエンド間の重複を減らす動的モデルマッピングおよびOpenAPI共通ライブラリを実装しました。"
         },
         {
           "company": "Motorola Solutions",
-          "position": "デスクトップWPF開発者",
-          "duration": "2021.12 - 2022.10",
-          "highlight": "米国40以上の郡の緊急サービス向けミッションクリティカルアプリ。データ暗号化、3000件超テストケース安定化。L2/L3本番サポート。"
+          "position": "WPFデスクトップ開発者",
+          "duration": "2021年12月 - 2022年10月",
+          "highlight": "米国40以上の郡で利用される公共安全向けWindowsアプリを保守。大規模レガシーコードの不具合解析、性能改善、リファクタリング、L2/L3本番サポートを3,000件超のテスト環境で担当しました。"
+        },
+        {
+          "company": "CyverIO / Whimsy Games",
+          "position": ".NETフルスタック／バックエンド開発者",
+          "duration": "2021年4月 - 2023年1月",
+          "highlight": "契約・パートタイム案件でASP.NET Core、Angular、ゲームバックエンド機能を開発し、REST API、認証、Redis、MongoDBを扱いました。"
         },
         {
           "company": "Sollers Consulting",
           "position": "C#開発者",
-          "duration": "2020.02 - 2021.10",
-          "highlight": "自動車クライアント向け50件超のカスタムBIレポート。SQLクエリ最適化（パフォーマンス30-40%向上）。技術ドキュメント・開発者トレーニングによるオンボーディング時間短縮。"
+          "duration": "2020年2月 - 2021年10月",
+          "highlight": "銀行向けMoody's CreditLensをカスタマイズし、SQL再設計、キャッシュ、並列取得によって一部レポート処理を約30〜40%改善しました。"
         }
       ]
     },
     "education": {
       "title": "学歴",
-      "description": "ウクライナ、ポーランド、中国の3大学でコンピュータサイエンスを学習。ソフトウェアエンジニアリング、AI、データ分析に注力。",
       "items": [
-        { "institution": "浙江師範大学", "degree": "コンピュータサイエンス修士", "duration": "2021.09 - 2024.06" },
-        { "institution": "ルブリン工科大学", "degree": "コンピュータサイエンス学士", "duration": "2015.10 - 2020.03" },
-        { "institution": "チェルニヒウ国立工科大学", "degree": "コンピュータエンジニアリング学士", "duration": "2015.09 - 2018.06" }
+        { "institution": "浙江師範大学（中国）", "degree": "コンピュータサイエンス 修士", "duration": "2024" },
+        { "institution": "ルブリン工科大学（ポーランド）", "degree": "コンピュータサイエンス 学士", "duration": "2020" },
+        { "institution": "チェルニーヒウ国立工科大学（ウクライナ）", "degree": "コンピュータ工学 学士", "duration": "2018" }
       ]
     },
     "skills": {
-      "title": "スキル",
-      "description": "バックエンド、データ、クラウド、フロントエンド、デスクトップ、テスト、AIに使用する技術スタック。",
-      "categories": {
-        "backend": "バックエンド・メッセージング・API",
-        "data": "データ・ストレージ",
-        "cloud": "クラウド・DevOps",
-        "frontend": "フロントエンド",
-        "desktop": "デスクトップ",
-        "testing": "テスト・AI"
-      }
+      "title": "コアスキル",
+      "description": "単なるキーワード一覧ではなく、対応できる技術課題ごとに整理しています。",
+      "groups": [
+        { "title": "アーキテクチャ・バックエンド", "items": ["C#", ".NET", "ASP.NET Core", "REST API", "分散システム", "マイクロサービス"] },
+        { "title": "クラウド・運用", "items": ["AWS Lambda", "API Gateway", "Cognito", "S3", "EC2", "EKS", "CloudWatch", "Docker"] },
+        { "title": "データ・メッセージング", "items": ["PostgreSQL", "ClickHouse", "Redis", "SQL Server", "MongoDB", "RabbitMQ", "SQS"] },
+        { "title": "AI活用", "items": ["RAG", "AIエージェント", "ツール呼び出し", "Amazon Bedrock", "MCP", "llama.cpp", "whisper.cpp", "Grok", "Gemini"] },
+        { "title": "フロントエンド・デスクトップ", "items": ["React", "TypeScript", "WPF", "Rust", "Tauri v2", "Python", "Qt"] },
+        { "title": "エンジニアリング実務", "items": ["設計トレードオフ", "性能最適化", "本番診断", "自動テスト", "CI/CD"] }
+      ]
     }
   },
   "Work": {
-    "liveProject": "ライブデモ",
-    "githubRepo": "GitHubリポジトリ",
-    "project": "プロジェクト",
+    "eyebrow": "主なシステム",
+    "title": "実際の制約に向き合うプロジェクト",
+    "description": "サーバーレスAI、ローカル優先の音声システム、リアルタイム製品設計を紹介します。顧客機密を含む商用案件は経歴ページに要約しています。",
+    "liveProject": "サイトを開く",
+    "githubRepo": "ソースを見る",
+    "privateRepo": "非公開リポジトリ",
     "items": [
-      {
-        "num": "01",
-        "category": "Web",
-        "title": "Cocktail GSAPウェブサイト",
-        "description": "架空のカクテルブランドのアニメーションランディングページ。React、TypeScript、GSAPを使用し、スムーズなスクロールベースのアニメーションとモダンなUIを実現。"
-      },
-      {
-        "num": "02",
-        "category": "Web",
-        "title": "コンピューターサービス",
-        "description": "コンピュータ修理サービスのシンプルなマーケティングサイト。クリーンなレイアウト、明確なサービスセクション、レスポンシブデザインに重点。"
-      },
-      {
-        "num": "03",
-        "category": "Web",
-        "title": "プレミアムカー",
-        "description": "プレミアムカーブランドのランディングページコンセプト。AngularとバニラJSでコンポーネントベースのUIと基本ルーティングを実践。"
-      },
-      {
-        "num": "04",
-        "category": "デスクトップ",
-        "title": "サービスモニタリング",
-        "description": "サービスステータスを監視するデスクトップアプリケーション。WPFと.NETで構築し、会社のサービスとそのステータスを管理。"
-      }
+      { "num": "01", "category": "サーバーレスAI", "title": "SchoolAI", "description": ".NET 8サーバーレスバックエンド、SQS FIFOとWorker Lambdaによる非同期AI処理、WebSocket通知、Cognito認証、Amazon Bedrock推論を備えた教育プラットフォームです。" },
+      { "num": "02", "category": "OSS・音声AI", "title": "KaigiAI", "description": "RustとTauriで構築した多言語会議アシスタント。whisper.cpp音声認識、ローカル／クラウドLLM、文脈翻訳を統合し、実際の業務会議で検証しました。" },
+      { "num": "03", "category": "リアルタイムWeb", "title": "Orionyx Online", "description": "React、Node.js、PostgreSQL、Redisを基盤とし、宇宙、艦隊、戦闘、同盟、取引、管理機能を備えたブラウザ型リアルタイムMMOストラテジーです。" }
     ]
   },
   "Contact": {
-    "title": "一緒に働きましょう",
-    "description": "以下のフォームにご記入ください。できるだけ早くご連絡いたします。",
+    "title": "長く使えるシステムを一緒に",
+    "description": "ポジション、課題、または開発中のシステムについてお知らせください。できるだけ早く返信します。",
     "firstname": "名",
     "lastname": "姓",
     "email": "メールアドレス",
     "phone": "電話番号",
-    "selectService": "サービスを選択",
-    "serviceWeb": "バックエンド・API開発",
+    "selectService": "ご相談分野",
+    "serviceWeb": "バックエンド・分散システム",
     "serviceVr": "AI統合",
     "serviceDesktop": "Web・デスクトップ開発",
-    "serviceCloud": "AWSクラウドインフラ",
-    "message": "メッセージを入力してください",
-    "send": "メッセージを送信",
+    "serviceCloud": "AWSクラウド設計",
+    "message": "メッセージ",
+    "send": "送信",
     "sending": "送信中...",
-    "success": "メッセージが送信されました！",
+    "success": "メッセージを送信しました。",
     "error": "エラーが発生しました。もう一度お試しください。",
-    "infoPhone": "電話番号",
+    "infoPhone": "電話",
     "infoEmail": "メール"
   },
   "NotFound": {
     "code": "404",
     "title": "ページが見つかりません",
-    "description": "お探しのページは存在しないか、移動されました。",
+    "description": "お探しのページは存在しないか、移動しました。",
     "back": "ホームに戻る"
   }
 }

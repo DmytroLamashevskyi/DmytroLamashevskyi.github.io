@@ -23,23 +23,21 @@ const MobileNav = () => {
 
   return (
     <Sheet>
-      <SheetTrigger className="flex justify-center items-center">
+      <SheetTrigger className="flex justify-center items-center" aria-label={tHeader("menuLabel")}>
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col items-center">
         <div className="mt-20 mb-12 text-center">
           <SheetClose asChild>
             <Link href={`/${locale}`}>
-              <h1 className="text-2xl font-semibold">
-                {tHeader("name")}<span className="text-accent">.</span>
-              </h1>
+              <h1 className="text-2xl font-semibold">Dmytro <span className="text-accent">L.</span></h1>
             </Link>
           </SheetClose>
         </div>
         <nav className="flex flex-col justify-center items-center gap-8">
-          {links.map((link, index) => {
+          {links.map((link) => {
             return (
-              <SheetClose asChild key={index}>
+              <SheetClose asChild key={link.path}>
                 <Link
                   href={link.path}
                   className={`${

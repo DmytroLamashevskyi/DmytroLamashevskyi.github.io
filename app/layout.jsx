@@ -8,13 +8,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Dmytro Lamashevskyi | Software Developer",
+  metadataBase: new URL("https://dmytrolamashevskyi.github.io"),
+  title: {
+    default: "Dmytro Lamashevskyi | Senior Software Engineer & Solution Architect",
+    template: "%s | Dmytro Lamashevskyi",
+  },
   description:
-    "Backend software engineer based in Japan. Specializing in C#, .NET, AWS and modern web technologies. 6+ years of experience building reliable systems.",
+    "Senior Software Engineer and Solution Architect in Japan, building distributed backend, cloud, data-intensive and AI-enabled systems with .NET and AWS.",
   keywords: [
     "Dmytro Lamashevskyi",
-    "Software Developer",
+    "Senior Software Engineer",
+    "Solution Architect",
     "Backend Engineer",
+    "Distributed Systems",
+    "Cloud Architecture",
+    "Generative AI",
     ".NET",
     "C#",
     "AWS",
@@ -23,13 +31,20 @@ export const metadata = {
   ],
   authors: [{ name: "Dmytro Lamashevskyi" }],
   openGraph: {
-    title: "Dmytro Lamashevskyi | Software Developer",
+    title: "Dmytro Lamashevskyi | Senior Software Engineer & Solution Architect",
     description:
-      "Backend software engineer based in Japan. Specializing in C#, .NET, AWS and modern web technologies.",
+      "Distributed systems, AWS cloud architecture, data platforms and applied AI - built with hands-on engineering judgment.",
     url: "https://dmytrolamashevskyi.github.io",
     siteName: "Dmytro Lamashevskyi Portfolio",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Dmytro Lamashevskyi - Senior Software Engineer and Solution Architect" }],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dmytro Lamashevskyi | Senior Software Engineer & Solution Architect",
+    description: "Distributed systems, AWS cloud architecture, data platforms and applied AI.",
+    images: ["/og.png"],
   },
 };
 

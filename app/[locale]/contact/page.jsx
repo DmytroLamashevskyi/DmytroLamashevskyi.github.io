@@ -29,7 +29,7 @@ const Contact = () => {
     {
       icon: <FaPhoneAlt />,
       title: t("infoPhone"),
-      description: "(+81)070-9332-6466",
+      description: "+81 (070) 9273-5332",
     },
     {
       icon: <FaEnvelope />,
@@ -69,7 +69,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { duration: 0.4, delay: 1.0, ease: "easeIn" },
+        transition: { duration: 0.35, delay: 0.08, ease: "easeOut" },
       }}
       className="py-6"
     >

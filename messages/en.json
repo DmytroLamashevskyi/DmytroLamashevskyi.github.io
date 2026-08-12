@@ -1,201 +1,178 @@
 {
   "Header": {
-    "name": "Lamashevskyi",
-    "initial": "D",
-    "hire": "Hire Me"
+    "hire": "Start a conversation",
+    "homeLabel": "Dmytro Lamashevskyi - home",
+    "menuLabel": "Open navigation"
   },
   "Nav": {
+    "label": "Primary navigation",
     "home": "Home",
-    "services": "Services",
+    "services": "Expertise",
     "resume": "Resume",
     "work": "Work",
     "contact": "Contact"
   },
   "Home": {
-    "role": "Backend Engineer | .NET & AWS",
-    "greeting": "Hello I'm",
-    "fullName": "Dmytro Lamashevskyi",
-    "tagline": "I design scalable APIs, microservices and cloud-native systems. 6+ years shipping production code from startups to enterprise.",
-    "downloadCv": "Download CV",
-    "downloadCvJp": "Download CV (JP)"
+    "eyebrow": "Based in Japan - open to senior engineering roles",
+    "greeting": "Engineering systems that",
+    "fullName": "hold up in practice.",
+    "role": "Senior Software Engineer | Solution Architect | Cloud & AI Systems",
+    "tagline": "I design and build distributed backend, cloud and data-intensive systems - then extend them with applied AI where it creates real value. 6+ years across startups, enterprise software and client-specific solution engineering.",
+    "capabilities": [".NET & backend architecture", "AWS & distributed systems", "Data platforms", "Applied GenAI", "Legacy modernization"],
+    "downloadMasterCv": "Download master CV",
+    "downloadJapaneseCv": "Download Japanese CV",
+    "viewWork": "View selected work"
   },
   "Stats": {
-    "experience": "Years of experience",
-    "technologies": "Technologies mastered",
-    "projects": "Projects shipped"
+    "analytics": "Selected analytics latency",
+    "analyticsNote": "Improved from approximately 1-2 minutes on the POS platform.",
+    "exports": "Streaming CSV exports",
+    "exportsNote": "Background generation across services with bounded memory use.",
+    "cloud": "Estimated AWS saving",
+    "cloudNote": "Recurring monthly reduction versus the original infrastructure estimate."
   },
   "Services": {
+    "eyebrow": "Engineering focus",
+    "title": "From architecture decisions to production code",
+    "description": "I work hands-on across backend implementation, cloud infrastructure, data systems and applied AI - with attention to operating cost, security boundaries and maintainability.",
+    "cta": "Discuss",
     "items": [
       {
         "num": "01",
-        "title": "Backend & API Development",
-        "description": "Scalable REST APIs, microservice architectures and distributed systems with .NET/C#. From greenfield design to production support, incident triage and performance tuning."
+        "title": "Backend & Distributed Systems",
+        "description": "Greenfield and evolving platforms built around clear service boundaries, APIs, asynchronous workflows, messaging and production diagnostics.",
+        "focus": ["C# / .NET", "REST APIs", "RabbitMQ", "Background processing"]
       },
       {
         "num": "02",
-        "title": "AWS Cloud Infrastructure",
-        "description": "Cloud-native architectures on AWS: S3, Lambda, Cognito, CloudWatch. Infrastructure design, CI/CD pipelines, cost optimization and production monitoring."
+        "title": "AWS & Cloud Architecture",
+        "description": "Serverless and container-based AWS systems, authentication, operational visibility and infrastructure decisions grounded in workload behavior and cost.",
+        "focus": ["Lambda", "API Gateway", "Cognito", "EKS / EC2", "CloudWatch"]
       },
       {
         "num": "03",
-        "title": "AI Integration",
-        "description": "AI-powered backend features: LLM integration, data vectorization, embedding search, chatbots and automation using LangChain, OpenAI and Amazon Bedrock."
+        "title": "Data & Performance",
+        "description": "Transactional and analytical data flows, constrained query interfaces, caching, batching, large exports and performance work across heterogeneous stores.",
+        "focus": ["PostgreSQL", "ClickHouse", "Redis", "SQL Server"]
       },
       {
         "num": "04",
-        "title": "Web & Desktop Development",
-        "description": "Full-stack web apps with React/TypeScript and .NET backends. Enterprise desktop tools in WPF with focus on security, testability and maintainability."
+        "title": "Applied AI Solutions",
+        "description": "Commercial prototypes and personal systems using RAG, agents, tool calling, MCP, speech recognition and local or cloud LLM inference - without confusing prototypes with production.",
+        "focus": ["Amazon Bedrock", "RAG", "MCP", "whisper.cpp", "llama.cpp"]
       }
     ]
   },
   "Resume": {
-    "tabs": {
-      "experience": "Experience",
-      "education": "Education",
-      "skills": "Skills",
-      "about": "About me"
-    },
+    "eyebrow": "Professional profile",
+    "title": "Experience shaped by systems, not titles",
+    "description": "A concise view of the work behind the four-page master CV: production platforms, solution engineering, enterprise debugging and recent applied AI architecture.",
+    "downloadMaster": "Download master CV",
+    "downloadJapanese": "Download Japanese CV",
     "about": {
-      "title": "About me",
-      "description": "Backend engineer based in Japan with 6+ years of experience. I led the backend design and AWS infrastructure setup for a greenfield microservice product, taking it from concept to production. I focus on clean, testable code, robust data models, and reliable integrations between distributed services. I work closely with product, front-end and DevOps teams to translate requirements into reliable systems.",
-      "fields": {
-        "name": "Name",
-        "phone": "Phone",
-        "experience": "Experience",
-        "email": "Email",
-        "country": "Country",
-        "languages": "Languages",
-        "japanese": "Japanese"
-      },
-      "values": {
-        "name": "Dmytro Lamashevskyi",
-        "phone": "(+81)070-9332-6466",
-        "experience": "6+ Years",
-        "email": "d.lamashevskyi@gmail.com",
-        "country": "Japan, Kagawa",
-        "languages": "English (Upper-Intermediate), Ukrainian (Native), Russian (Native), Polish (Upper-Intermediate)",
-        "japanese": "JLPT N4"
-      }
+      "title": "Current positioning",
+      "description": "Senior Software Engineer and Solution Architect based in Kagawa, Japan. My primary identity is backend, distributed systems and cloud engineering; applied AI is a recent extension of that foundation.",
+      "highlights": ["6+ years of professional experience", "Hands-on architecture and implementation", "English, Polish, Ukrainian, Russian and Japanese N4"]
     },
     "experience": {
-      "title": "My Experience",
-      "description": "Over 6 years building backend systems, APIs and cloud-native applications across startups, gaming, enterprise and public safety industries.",
+      "title": "Professional experience",
       "items": [
         {
-          "company": "Honki Mode (Startup)",
-          "position": "Full-Stack .NET Developer",
-          "duration": "2024.06 - present",
-          "highlight": "Led backend design & AWS infra from concept to production. Built SQL engine (+30-40% report speed), PDF/barcode automation (-50% processing time). Integrated AI/ML components."
+          "company": "Honki Mode - Japan",
+          "position": "Backend / Full-Stack Developer, Architecture Contributor",
+          "duration": "Jun 2024 - Present",
+          "highlight": "Built a greenfield POS administration application; designed ClickHouse analytics, 300 MB streaming exports, Cognito session handling and RabbitMQ integration. Contributed to EKS/EC2 cost optimization with an estimated recurring reduction of about USD 1,300 per month versus the original estimate. Also delivered client-specific Forward Deploy automation and modernization solutions."
+        },
+        {
+          "company": "Honki Mode - commercial feasibility prototype",
+          "position": "Store-Support GenAI Chatbot - Prototype Owner",
+          "duration": "Nov 2024 - Feb 2025",
+          "highlight": "Designed and implemented a React, .NET Lambda and Amazon Bedrock RAG prototype with tool calling. Identified a model-controlled identity trust-boundary flaw and helped evaluate the decision not to productionize the system because retrieval, security and cost-to-impact were unfavorable."
         },
         {
           "company": "Devox Software",
-          "position": "Back-end Developer",
-          "duration": "2023.02 - 2024.05",
-          "highlight": "Microservices with ASP.NET Core on AWS (EC2, S3, Lambda). Created technical docs that improved onboarding speed. Performance tuning for critical services."
-        },
-        {
-          "company": "Cyver.io",
-          "position": ".NET Developer",
-          "duration": "2022.12 - 2023.01",
-          "highlight": "Core features for a penetration testing platform. Full-stack ASP.NET + Angular. Architectural discussions on scalability and security."
-        },
-        {
-          "company": "Whimsy Games",
-          "position": "Back-end Developer",
-          "duration": "2021.04 - 2022.09",
-          "highlight": "Scalable backend for multiplayer gaming (thousands of concurrent players). RESTful APIs with MongoDB, Redis, AWS S3. Admin dashboards for operations."
+          "position": "Backend Developer",
+          "duration": "Feb 2023 - May 2024",
+          "highlight": "Developed APIs and microservices for a UK university-admission platform and created reusable dynamic model-mapping and OpenAPI tooling that reduced duplicated backend/frontend contracts."
         },
         {
           "company": "Motorola Solutions",
           "position": "Desktop WPF Developer",
-          "duration": "2021.12 - 2022.10",
-          "highlight": "Mission-critical app for emergency services across 40+ U.S. counties. Data encryption, 3000+ test cases stabilization. L2/L3 production support."
+          "duration": "Dec 2021 - Oct 2022",
+          "highlight": "Maintained a mission-critical public-safety Windows application used across more than 40 U.S. counties, covering complex legacy debugging, performance, refactoring and L2/L3 production support in a 3,000+ test environment."
+        },
+        {
+          "company": "CyverIO / Whimsy Games",
+          "position": ".NET Full-Stack & Backend Developer",
+          "duration": "Apr 2021 - Jan 2023",
+          "highlight": "Delivered ASP.NET Core, Angular and game-backend functionality across contract and part-time engagements, working with REST APIs, authentication, Redis and MongoDB."
         },
         {
           "company": "Sollers Consulting",
           "position": "C# Developer",
-          "duration": "2020.02 - 2021.10",
-          "highlight": "50+ custom BI reports for automotive clients. Optimized SQL queries (+30-40% performance). Technical docs and developer training that reduced onboarding time."
+          "duration": "Feb 2020 - Oct 2021",
+          "highlight": "Customized Moody's CreditLens for banking clients and improved selected reporting workflows by approximately 30-40% through SQL redesign, caching and parallel retrieval."
         }
       ]
     },
     "education": {
-      "title": "My Education",
-      "description": "Computer Science foundation across three universities in Ukraine, Poland and China, with focus on software engineering, AI and data analytics.",
+      "title": "Education",
       "items": [
-        { "institution": "Zhejiang Normal University", "degree": "Master of Computer Science", "duration": "2021.09 - 2024.06" },
-        { "institution": "Lublin University of Technology", "degree": "Bachelor of Computer Science", "duration": "2015.10 - 2020.03" },
-        { "institution": "Chernihiv National University of Technology", "degree": "Bachelor of Computer Engineering", "duration": "2015.09 - 2018.06" }
+        { "institution": "Zhejiang Normal University, China", "degree": "Master of Science in Computer Science", "duration": "2024" },
+        { "institution": "Lublin University of Technology, Poland", "degree": "Bachelor of Science in Computer Science", "duration": "2020" },
+        { "institution": "Chernihiv National University of Technology, Ukraine", "degree": "Bachelor of Science in Computer Engineering", "duration": "2018" }
       ]
     },
     "skills": {
-      "title": "My skills",
-      "description": "Tech stack I use for backend, data, cloud, frontend, desktop, testing and AI.",
-      "categories": {
-        "backend": "Backend, Messaging & APIs",
-        "data": "Data & Storage",
-        "cloud": "Cloud & DevOps",
-        "frontend": "Front-end",
-        "desktop": "Desktop",
-        "testing": "Testing & AI"
-      }
+      "title": "Core capabilities",
+      "description": "Grouped by the engineering problems they support, not as an exhaustive keyword inventory.",
+      "groups": [
+        { "title": "Architecture & Backend", "items": ["C#", ".NET", "ASP.NET Core", "REST APIs", "Distributed systems", "Microservices"] },
+        { "title": "Cloud & Operations", "items": ["AWS Lambda", "API Gateway", "Cognito", "S3", "EC2", "EKS", "CloudWatch", "Docker"] },
+        { "title": "Data & Messaging", "items": ["PostgreSQL", "ClickHouse", "Redis", "SQL Server", "MongoDB", "RabbitMQ", "SQS"] },
+        { "title": "Applied AI", "items": ["RAG", "AI agents", "Tool calling", "Amazon Bedrock", "MCP", "llama.cpp", "whisper.cpp", "Grok", "Gemini"] },
+        { "title": "Frontend & Desktop", "items": ["React", "TypeScript", "WPF", "Rust", "Tauri v2", "Python", "Qt"] },
+        { "title": "Engineering Practice", "items": ["Architecture trade-offs", "Performance optimization", "Production diagnostics", "Automated testing", "CI/CD"] }
+      ]
     }
   },
   "Work": {
-    "liveProject": "Live Project",
-    "githubRepo": "Github Repo",
-    "project": "project",
+    "eyebrow": "Selected systems",
+    "title": "Projects where architecture meets a real constraint",
+    "description": "A focused selection spanning serverless AI, local-first speech systems and real-time product architecture. Commercial work remains summarized in the resume where client confidentiality requires it.",
+    "liveProject": "Open product",
+    "githubRepo": "View source",
+    "privateRepo": "Private repository",
     "items": [
-      {
-        "num": "01",
-        "category": "Web",
-        "title": "Cocktail GSAP Website",
-        "description": "Animated landing page for a fictional cocktail brand, built with React, TypeScript and GSAP to showcase smooth scroll-based animations and modern UI."
-      },
-      {
-        "num": "02",
-        "category": "Web",
-        "title": "Computer Service Front",
-        "description": "Simple marketing website for a computer repair service, focused on clean layout, clear service sections and responsive design."
-      },
-      {
-        "num": "03",
-        "category": "Web",
-        "title": "Premium Cars",
-        "description": "Landing page concept for a premium car brand, built with Angular and vanilla JS to practice component-based UI and basic routing."
-      },
-      {
-        "num": "04",
-        "category": "Desktop",
-        "title": "Service Monitoring",
-        "description": "A desktop application for monitoring service status, built with WPF and .NET to manage company services and their statuses."
-      }
+      { "num": "01", "category": "Serverless AI", "title": "SchoolAI", "description": "An education platform with a .NET 8 serverless backend, asynchronous AI jobs via SQS FIFO and worker Lambdas, WebSocket updates, Cognito authentication and Amazon Bedrock inference." },
+      { "num": "02", "category": "Open source / Speech AI", "title": "KaigiAI", "description": "A multilingual meeting assistant built with Rust and Tauri, combining whisper.cpp speech recognition, local and cloud LLM providers, context-aware translation and real-world meeting validation." },
+      { "num": "03", "category": "Real-time web system", "title": "Orionyx Online", "description": "A browser-based space MMO strategy game with configurable universes, progression, fleets, combat, alliances and administration tooling across a React, Node.js, PostgreSQL and Redis architecture." }
     ]
   },
   "Contact": {
-    "title": "Lets work together",
-    "description": "Fill out the form below and I will get back to you as soon as possible.",
-    "firstname": "Firstname",
-    "lastname": "Lastname",
+    "title": "Let's build something durable",
+    "description": "Share the role, problem or system you are working on. I will get back to you as soon as possible.",
+    "firstname": "First name",
+    "lastname": "Last name",
     "email": "Email address",
     "phone": "Phone number",
-    "selectService": "Select a service",
-    "serviceWeb": "Backend & API Development",
-    "serviceVr": "AI Integration",
-    "serviceDesktop": "Web & Desktop Development",
-    "serviceCloud": "AWS Cloud Infrastructure",
-    "message": "Type your message here",
+    "selectService": "Area of interest",
+    "serviceWeb": "Backend & distributed systems",
+    "serviceVr": "Applied AI integration",
+    "serviceDesktop": "Web & desktop development",
+    "serviceCloud": "AWS cloud architecture",
+    "message": "Your message",
     "send": "Send message",
     "sending": "Sending...",
-    "success": "Message sent successfully!",
+    "success": "Message sent successfully.",
     "error": "Something went wrong. Please try again.",
     "infoPhone": "Phone",
     "infoEmail": "Email"
   },
   "NotFound": {
     "code": "404",
-    "title": "Page Not Found",
-    "description": "The page you are looking for does not exist or has been moved.",
-    "back": "Back to Home"
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has moved.",
+    "back": "Back to home"
   }
 }

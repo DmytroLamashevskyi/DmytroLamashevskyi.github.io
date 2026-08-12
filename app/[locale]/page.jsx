@@ -1,62 +1,63 @@
 "use client";
 
+import Link from "next/link";
+import { motion, useReducedMotion } from "framer-motion";
+import { FiDownload } from "react-icons/fi";
+import { useLocale, useTranslations } from "next-intl";
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
-import { useTranslations } from "next-intl";
 
 const Home = () => {
   const t = useTranslations("Home");
+  const locale = useLocale();
+  const reduceMotion = useReducedMotion();
+  const capabilities = t.raw("capabilities");
 
   return (
-    <section className="h-full">
-      <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-          <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">{t("role")}</span>
-            <h1 className="h1 mb-6">
-              {t("greeting")} <br />
+    <section>
+      <div className="container mx-auto">
+        <div className="grid min-h-[690px] items-center gap-12 py-12 xl:grid-cols-[1.18fr_0.82fr] xl:py-16">
+          <motion.div
+            initial={reduceMotion ? false : { opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: reduceMotion ? 0 : 0.45, ease: "easeOut" }}
+            className="order-2 text-center xl:order-none xl:text-left"
+          >
+            <span className="eyebrow">
+              <span className="h-2 w-2 rounded-full bg-accent shadow-[0_0_14px_rgba(102,247,191,0.85)]" />
+              {t("eyebrow")}
+            </span>
+            <h1 className="h1 mb-6 mt-5">
+              {t("greeting")}<br />
               <span className="text-accent">{t("fullName")}</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">{t("tagline")}</p>
-            <div className="flex flex-col items-center xl:flex-row gap-6 xl:gap-8">
-              <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
-                <a href="/assets/Lamashevskyi_Dmytro_CV_2026_ENG.pdf" download>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="uppercase flex items-center gap-2 text-sm sm:text-base"
-                  >
-                    <span>{t("downloadCv")}</span>
-                    <FiDownload className="text-xl" />
-                  </Button>
-                </a>
-                <a
-                  href="/assets/Lamashevskyi_Dmytro_CV_2026_JPN.pdf"
-                  download
-                >
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="uppercase flex items-center gap-2 text-sm sm:text-base"
-                  >
-                    <span>{t("downloadCvJp")}</span>
-                    <FiDownload className="text-xl" />
-                  </Button>
-                </a>
-              </div>
-              <div className="mb-8 xl:mb-0">
-                <Social
-                  containerStyles="flex gap-6"
-                  iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center
-                  text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
-                />
-              </div>
+            <p className="mb-3 text-lg font-semibold text-white/90">{t("role")}</p>
+            <p className="mx-auto mb-7 max-w-[680px] text-sm leading-7 text-white/60 sm:text-base xl:mx-0">{t("tagline")}</p>
+            <div className="mb-8 flex flex-wrap justify-center gap-2 xl:justify-start">
+              {capabilities.map((capability) => <span key={capability} className="tech-pill">{capability}</span>)}
             </div>
-          </div>
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+            <div className="flex flex-col items-center gap-5 sm:flex-row sm:justify-center xl:justify-start">
+              <div className="flex flex-col items-center gap-3 sm:flex-row">
+                <Button asChild variant="outline" size="lg" className="flex items-center gap-2 text-sm sm:text-base">
+                  <a href="/assets/Lamashevskyi_Dmytro_CV_Master_4P_ENG.pdf" download>
+                    <span>{t("downloadMasterCv")}</span>
+                    <FiDownload className="text-xl" />
+                  </a>
+                </Button>
+                <Button asChild size="lg"><Link href={`/${locale}/work`}>{t("viewWork")}</Link></Button>
+              </div>
+              <Social
+                containerStyles="flex gap-3"
+                iconStyles="w-10 h-10 border border-white/15 rounded-full flex justify-center items-center text-white/70 text-base hover:border-accent hover:text-accent transition-colors"
+              />
+            </div>
+            <a href="/assets/Lamashevskyi_Dmytro_CV_2026_JPN.pdf" download className="mt-5 inline-flex text-xs text-white/45 underline-offset-4 hover:text-accent hover:underline">
+              {t("downloadJapaneseCv")}
+            </a>
+          </motion.div>
+          <div className="order-1 flex justify-center xl:order-none xl:justify-end">
             <Photo />
           </div>
         </div>
