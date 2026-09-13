@@ -9,11 +9,24 @@ import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 
+const brandCopy = {
+  en: {
+    role: "Senior Software / Product Engineer | .NET · AI · Cloud · Interactive Systems",
+    tagline: "I build software products from business problem to production — distributed backend and cloud systems, applied AI, and interactive experiences. 6+ years across startups, enterprise software and client-specific solution engineering.",
+    capabilities: [".NET & product engineering", "AWS & distributed systems", "Applied AI", "Unity & interactive systems", "Legacy modernization"],
+  },
+  ja: {
+    role: "シニアソフトウェア／プロダクトエンジニア | .NET・AI・クラウド・インタラクティブシステム",
+    tagline: "ビジネス課題から本番運用まで、分散バックエンド、クラウド、AI、インタラクティブなプロダクトを設計・実装します。スタートアップ、エンタープライズ、顧客別ソリューションで6年以上の実務経験があります。",
+    capabilities: [".NET・プロダクト開発", "AWS・分散システム", "AI活用", "Unity・インタラクティブ開発", "レガシー刷新"],
+  },
+};
+
 const Home = () => {
   const t = useTranslations("Home");
   const locale = useLocale();
   const reduceMotion = useReducedMotion();
-  const capabilities = t.raw("capabilities");
+  const copy = brandCopy[locale] ?? brandCopy.en;
 
   return (
     <section>
@@ -33,10 +46,10 @@ const Home = () => {
               {t("greeting")}<br />
               <span className="text-accent">{t("fullName")}</span>
             </h1>
-            <p className="mb-3 text-lg font-semibold text-white/90">{t("role")}</p>
-            <p className="mx-auto mb-7 max-w-[680px] text-sm leading-7 text-white/60 sm:text-base xl:mx-0">{t("tagline")}</p>
+            <p className="mb-3 text-lg font-semibold text-white/90">{copy.role}</p>
+            <p className="mx-auto mb-7 max-w-[680px] text-sm leading-7 text-white/60 sm:text-base xl:mx-0">{copy.tagline}</p>
             <div className="mb-8 flex flex-wrap justify-center gap-2 xl:justify-start">
-              {capabilities.map((capability) => <span key={capability} className="tech-pill">{capability}</span>)}
+              {copy.capabilities.map((capability) => <span key={capability} className="tech-pill">{capability}</span>)}
             </div>
             <div className="flex flex-col items-center gap-5 sm:flex-row sm:justify-center xl:justify-start">
               <div className="flex flex-col items-center gap-3 sm:flex-row">
