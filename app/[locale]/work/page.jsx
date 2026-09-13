@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const projectData = [
   {
@@ -26,11 +26,34 @@ const projectData = [
   },
 ];
 
+const hollowWayCopy = {
+  en: {
+    num: "04",
+    category: "Unity / Interactive",
+    title: "Hollow Way",
+    description: "A Unity 6 Android puzzle game built as a complete interactive product: gameplay systems, URP visuals, Figma-to-Unity UI, localization, monetization, release tooling and mobile performance constraints.",
+  },
+  ja: {
+    num: "04",
+    category: "Unity・インタラクティブ",
+    title: "Hollow Way",
+    description: "Unity 6で開発中のAndroid向けパズルゲーム。ゲームシステム、URP表現、FigmaからUnityへのUI実装、ローカライズ、収益化、リリース準備、モバイル性能まで一つのプロダクトとして構築しています。",
+  },
+};
+
 const Work = () => {
   const t = useTranslations("Work");
+  const locale = useLocale();
   const reduceMotion = useReducedMotion();
   const content = t.raw("items");
-  const projects = projectData.map((project, index) => ({ ...project, ...content[index] }));
+  const hollowWay = {
+    live: null,
+    github: null,
+    stack: ["Unity 6", "C#", "URP", "Android", "Figma"],
+    accent: "from-cyan-400/25 via-fuchsia-400/10 to-transparent",
+    ...(hollowWayCopy[locale] ?? hollowWayCopy.en),
+  };
+  const projects = [...projectData, hollowWay].map((project, index) => ({ ...project, ...(content[index] ?? {}) }));
 
   return (
     <section className="py-14 xl:py-20">
@@ -40,7 +63,7 @@ const Work = () => {
           <h1 className="h2 mb-5 mt-4">{t("title")}</h1>
           <p className="text-white/55">{t("description")}</p>
         </div>
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {projects.map((project, index) => (
             <motion.article
               key={project.title}
