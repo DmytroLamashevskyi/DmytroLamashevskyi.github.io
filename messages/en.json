@@ -16,9 +16,9 @@
     "eyebrow": "Based in Japan - open to senior engineering roles",
     "greeting": "Engineering systems that",
     "fullName": "hold up in practice.",
-    "role": "Senior Software Engineer | Solution Architect | Cloud & AI Systems",
-    "tagline": "I design and build distributed backend, cloud and data-intensive systems - then extend them with applied AI where it creates real value. 6+ years across startups, enterprise software and client-specific solution engineering.",
-    "capabilities": [".NET & backend architecture", "AWS & distributed systems", "Data platforms", "Applied GenAI", "Legacy modernization"],
+    "role": "Senior Software / Product Engineer | .NET · AI · Cloud · Interactive Systems",
+    "tagline": "I build software products from business problem to production — distributed backend and cloud systems, applied AI, and interactive experiences. 6+ years across startups, enterprise software and client-specific solution engineering.",
+    "capabilities": [".NET & product engineering", "AWS & distributed systems", "Applied AI", "Unity & interactive systems", "Legacy modernization"],
     "downloadMasterCv": "Download master CV",
     "downloadJapaneseCv": "Download Japanese CV",
     "viewWork": "View selected work"
@@ -142,11 +142,13 @@
     "description": "A focused selection spanning serverless AI, local-first speech systems and real-time product architecture. Commercial work remains summarized in the resume where client confidentiality requires it.",
     "liveProject": "Open product",
     "githubRepo": "View source",
-    "privateRepo": "Private repository",
+    "privateRepo": "Private source",
+    "caseStudy": "Read case study",
     "items": [
       { "num": "01", "category": "Serverless AI", "title": "SchoolAI", "description": "An education platform with a .NET 8 serverless backend, asynchronous AI jobs via SQS FIFO and worker Lambdas, WebSocket updates, Cognito authentication and Amazon Bedrock inference." },
       { "num": "02", "category": "Open source / Speech AI", "title": "KaigiAI", "description": "A multilingual meeting assistant built with Rust and Tauri, combining whisper.cpp speech recognition, local and cloud LLM providers, context-aware translation and real-world meeting validation." },
-      { "num": "03", "category": "Real-time web system", "title": "Orionyx Online", "description": "A browser-based space MMO strategy game with configurable universes, progression, fleets, combat, alliances and administration tooling across a React, Node.js, PostgreSQL and Redis architecture." }
+      { "num": "03", "category": "Real-time web system", "title": "Orionyx Online", "description": "A browser-based space MMO strategy game with configurable universes, progression, fleets, combat, alliances and administration tooling across a React, Node.js, PostgreSQL and Redis architecture." },
+      { "num": "04", "category": "Unity / Interactive", "title": "Hollow Way", "description": "A Unity 6 Android puzzle game built as a complete interactive product: deterministic gameplay systems, URP visuals, Figma-to-Unity UI, localization, monetization boundaries and mobile release constraints." }
     ]
   },
   "Contact": {

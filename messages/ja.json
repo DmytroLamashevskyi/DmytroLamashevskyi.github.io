@@ -16,9 +16,9 @@
     "eyebrow": "日本在住 - シニアエンジニア職を検討中",
     "greeting": "実運用に耐える",
     "fullName": "システムを設計・実装します。",
-    "role": "シニアソフトウェアエンジニア | ソリューションアーキテクト | クラウド・AIシステム",
-    "tagline": "分散バックエンド、クラウド、データ集約型システムを設計・実装し、実際の価値につながる場面でAIを統合します。スタートアップ、エンタープライズ、顧客別ソリューションで6年以上の実務経験があります。",
-    "capabilities": [".NET・バックエンド設計", "AWS・分散システム", "データ基盤", "生成AI活用", "レガシー刷新"],
+    "role": "シニアソフトウェア／プロダクトエンジニア | .NET・AI・クラウド・インタラクティブシステム",
+    "tagline": "ビジネス課題から本番運用まで、分散バックエンド、クラウド、AI、インタラクティブなプロダクトを設計・実装します。スタートアップ、エンタープライズ、顧客別ソリューションで6年以上の実務経験があります。",
+    "capabilities": [".NET・プロダクト開発", "AWS・分散システム", "AI活用", "Unity・インタラクティブ開発", "レガシー刷新"],
     "downloadMasterCv": "英文Master CV",
     "downloadJapaneseCv": "日本語CVをダウンロード",
     "viewWork": "プロジェクトを見る"
@@ -142,11 +142,13 @@
     "description": "サーバーレスAI、ローカル優先の音声システム、リアルタイム製品設計を紹介します。顧客機密を含む商用案件は経歴ページに要約しています。",
     "liveProject": "サイトを開く",
     "githubRepo": "ソースを見る",
-    "privateRepo": "非公開リポジトリ",
+    "privateRepo": "ソース非公開",
+    "caseStudy": "ケーススタディ",
     "items": [
       { "num": "01", "category": "サーバーレスAI", "title": "SchoolAI", "description": ".NET 8サーバーレスバックエンド、SQS FIFOとWorker Lambdaによる非同期AI処理、WebSocket通知、Cognito認証、Amazon Bedrock推論を備えた教育プラットフォームです。" },
       { "num": "02", "category": "OSS・音声AI", "title": "KaigiAI", "description": "RustとTauriで構築した多言語会議アシスタント。whisper.cpp音声認識、ローカル／クラウドLLM、文脈翻訳を統合し、実際の業務会議で検証しました。" },
-      { "num": "03", "category": "リアルタイムWeb", "title": "Orionyx Online", "description": "React、Node.js、PostgreSQL、Redisを基盤とし、宇宙、艦隊、戦闘、同盟、取引、管理機能を備えたブラウザ型リアルタイムMMOストラテジーです。" }
+      { "num": "03", "category": "リアルタイムWeb", "title": "Orionyx Online", "description": "React、Node.js、PostgreSQL、Redisを基盤とし、宇宙、艦隊、戦闘、同盟、取引、管理機能を備えたブラウザ型リアルタイムMMOストラテジーです。" },
+      { "num": "04", "category": "Unity・インタラクティブ", "title": "Hollow Way", "description": "Unity 6で開発中のAndroid向けパズルゲーム。決定論的なゲームシステム、URP表現、FigmaからUnityへのUI実装、ローカライズ、収益化の境界設計、モバイルリリース要件まで一つのプロダクトとして構築しています。" }
     ]
   },
   "Contact": {

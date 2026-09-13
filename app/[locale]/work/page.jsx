@@ -3,12 +3,13 @@
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const projectData = [
   {
     live: "https://school-ai.jp/",
     github: null,
+    caseStudy: "schoolai",
     stack: [".NET 8", "AWS Lambda", "Bedrock", "SQS", "React"],
     accent: "from-emerald-400/25 via-cyan-400/10 to-transparent",
   },
@@ -24,10 +25,18 @@ const projectData = [
     stack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Socket.IO"],
     accent: "from-orange-400/25 via-rose-400/10 to-transparent",
   },
+  {
+    live: null,
+    github: null,
+    caseStudy: "hollow-way",
+    stack: ["Unity 6", "C#", "URP", "Android", "Figma"],
+    accent: "from-cyan-400/25 via-fuchsia-400/10 to-transparent",
+  },
 ];
 
 const Work = () => {
   const t = useTranslations("Work");
+  const locale = useLocale();
   const reduceMotion = useReducedMotion();
   const content = t.raw("items");
   const projects = projectData.map((project, index) => ({ ...project, ...content[index] }));
@@ -40,7 +49,7 @@ const Work = () => {
           <h1 className="h2 mb-5 mt-4">{t("title")}</h1>
           <p className="text-white/55">{t("description")}</p>
         </div>
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {projects.map((project, index) => (
             <motion.article
               key={project.title}
@@ -51,8 +60,8 @@ const Work = () => {
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${project.accent} opacity-70 transition-opacity group-hover:opacity-100`} />
               <div className="relative flex w-full flex-col">
-                <div className="flex items-center justify-between text-xs uppercase tracking-[0.16em] text-white/45">
-                  <span>{project.num}</span><span>{project.category}</span>
+                <div className="flex items-start justify-between gap-4 text-xs uppercase tracking-[0.16em] text-white/45">
+                  <span className="shrink-0">{project.num}</span><span className="text-right leading-4">{project.category}</span>
                 </div>
                 <div className="mt-20">
                   <h2 className="text-3xl font-bold">{project.title}</h2>
@@ -62,7 +71,12 @@ const Work = () => {
                   <div className="mb-6 flex flex-wrap gap-2">
                     {project.stack.map((item) => <span key={item} className="tech-pill">{item}</span>)}
                   </div>
-                  <div className="flex items-center gap-3 border-t border-white/10 pt-5">
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-white/10 pt-5">
+                    {project.caseStudy && (
+                      <Link href={`/${locale}/work/${project.caseStudy}`} className="flex items-center gap-2 text-sm font-semibold text-accent hover:text-white">
+                        {t("caseStudy")} <BsArrowUpRight />
+                      </Link>
+                    )}
                     {project.live && (
                       <Link href={project.live} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-semibold text-accent hover:text-white">
                         {t("liveProject")} <BsArrowUpRight />
