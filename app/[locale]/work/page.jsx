@@ -7,6 +7,13 @@ import { useLocale, useTranslations } from "next-intl";
 
 const projectData = [
   {
+    live: null,
+    github: null,
+    caseStudy: "pos-analytics",
+    stack: [".NET", "ClickHouse", "RabbitMQ", "Redis", "AWS"],
+    accent: "from-blue-400/25 via-emerald-400/10 to-transparent",
+  },
+  {
     live: "https://school-ai.jp/",
     github: null,
     caseStudy: "schoolai",
@@ -16,6 +23,7 @@ const projectData = [
   {
     live: null,
     github: "https://github.com/DmytroLamashevskyi/KaigiAI",
+    caseStudy: "kaigiai",
     stack: ["Rust", "Tauri v2", "whisper.cpp", "llama.cpp", "React"],
     accent: "from-violet-400/25 via-blue-400/10 to-transparent",
   },
@@ -49,7 +57,7 @@ const Work = () => {
           <h1 className="h2 mb-5 mt-4">{t("title")}</h1>
           <p className="text-white/55">{t("description")}</p>
         </div>
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project, index) => (
             <motion.article
               key={project.title}

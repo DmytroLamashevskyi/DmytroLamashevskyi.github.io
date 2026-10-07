@@ -16,9 +16,15 @@
     "eyebrow": "日本在住 - シニアエンジニア職を検討中",
     "greeting": "実運用に耐える",
     "fullName": "システムを設計・実装します。",
-    "role": "シニアソフトウェア／プロダクトエンジニア | .NET・AI・クラウド・インタラクティブシステム",
-    "tagline": "ビジネス課題から本番運用まで、分散バックエンド、クラウド、AI、インタラクティブなプロダクトを設計・実装します。スタートアップ、エンタープライズ、顧客別ソリューションで6年以上の実務経験があります。",
-    "capabilities": [".NET・プロダクト開発", "AWS・分散システム", "AI活用", "Unity・インタラクティブ開発", "レガシー刷新"],
+    "role": "シニアソフトウェアエンジニア | .NET・AWS・AI活用",
+    "tagline": "業務を効率化し、保守しやすいバックエンド・クラウドシステムを構築します。.NET、AWS、分散システムを中心に6年以上の実務経験があり、AIの実現可能性検証や個人プロダクト開発にも取り組んでいます。",
+    "capabilities": [
+      ".NETバックエンド開発",
+      "AWS・分散システム",
+      "データ・性能改善",
+      "業務自動化",
+      "AI活用"
+    ],
     "downloadMasterCv": "英文Master CV",
     "downloadJapaneseCv": "日本語CVをダウンロード",
     "viewWork": "プロジェクトを見る"
@@ -41,51 +47,84 @@
         "num": "01",
         "title": "バックエンド・分散システム",
         "description": "明確なサービス境界、API、非同期処理、メッセージング、運用診断を備えた新規・既存プラットフォームを構築します。",
-        "focus": ["C# / .NET", "REST API", "RabbitMQ", "バックグラウンド処理"]
+        "focus": [
+          "C# / .NET",
+          "REST API",
+          "RabbitMQ",
+          "バックグラウンド処理"
+        ]
       },
       {
         "num": "02",
         "title": "AWS・クラウドアーキテクチャ",
         "description": "サーバーレスおよびコンテナ型AWSシステム、認証、可観測性、実際の負荷とコストに基づくインフラ最適化に対応します。",
-        "focus": ["Lambda", "API Gateway", "Cognito", "EKS / EC2", "CloudWatch"]
+        "focus": [
+          "Lambda",
+          "API Gateway",
+          "Cognito",
+          "EKS / EC2",
+          "CloudWatch"
+        ]
       },
       {
         "num": "03",
         "title": "データ・パフォーマンス",
         "description": "トランザクション・分析データ、制約付きクエリ、キャッシュ、バッチ処理、大容量出力、複数データストアの性能改善を設計します。",
-        "focus": ["PostgreSQL", "ClickHouse", "Redis", "SQL Server"]
+        "focus": [
+          "PostgreSQL",
+          "ClickHouse",
+          "Redis",
+          "SQL Server"
+        ]
       },
       {
         "num": "04",
         "title": "AIソリューション",
         "description": "RAG、AIエージェント、ツール呼び出し、MCP、音声認識、ローカル・クラウドLLMを活用し、試作と本番を明確に区別して評価します。",
-        "focus": ["Amazon Bedrock", "RAG", "MCP", "whisper.cpp", "llama.cpp"]
+        "focus": [
+          "Amazon Bedrock",
+          "RAG",
+          "MCP",
+          "whisper.cpp",
+          "llama.cpp"
+        ]
       }
     ]
   },
   "Resume": {
     "eyebrow": "職務プロフィール",
-    "title": "肩書きではなく、システムで積み上げた経験",
+    "title": "バックエンド開発・設計と具体的な成果",
     "description": "4ページの英文Master CVを要約し、本番プラットフォーム、顧客別ソリューション、エンタープライズ開発、近年のAIアーキテクチャ経験を紹介します。",
     "downloadMaster": "英文Master CV",
     "downloadJapanese": "日本語CVをダウンロード",
     "about": {
-      "title": "現在のポジショニング",
-      "description": "香川県在住のシニアソフトウェアエンジニア／ソリューションアーキテクトです。専門の中心はバックエンド、分散システム、クラウドで、AIは近年加わった実践分野です。",
-      "highlights": ["6年以上の実務経験", "設計と実装の両方に対応", "英語・ポーランド語・ウクライナ語・ロシア語・日本語N4"]
+      "title": "自己紹介",
+      "description": "香川県在住のシニアソフトウェアエンジニアです。.NETバックエンド、AWS、分散データ処理を専門とし、要件整理から設計、実装、本番サポートまで担当します。AI分野では商用の実現可能性検証と個人プロダクトの開発経験があります。",
+      "highlights": [
+        "6年以上の実務経験",
+        "設計と実装の両方に対応",
+        "英語・ポーランド語・ウクライナ語・ロシア語・日本語N4",
+        "AWS Certified AI Practitioner（2026年9月〜2029年9月）"
+      ]
     },
     "experience": {
       "title": "職務経歴",
       "items": [
         {
-          "company": "株式会社本気モード - 日本",
-          "position": "バックエンド／フルスタック開発・アーキテクチャ貢献",
-          "duration": "2024年6月 - 現在",
-          "highlight": "POS管理アプリを新規構築し、ClickHouse分析、約300MBのストリーミング出力、Cognitoセッション、RabbitMQ連携を設計・実装。EKS/EC2最適化では当初見積もり比で月約1,300米ドルの継続削減を見込みました。顧客別の業務自動化・レガシー刷新にも従事しています。"
+          "company": "株式会社本気モード - 香川県",
+          "position": "AI Solutions Architect & Tech Consultant",
+          "duration": "2026年3月 - 現在",
+          "highlight": "Forward Deployed Engineerに近い顧客対応型の開発を担当。Python／Qtの財務ツールでは月約1〜2人日の削減を見込み、共通価格計算と認証付きMCPを備えたDjango ERP、および読み取り専用の旧ERP連携を設計しました。ERPとレガシー刷新は開発中です。"
         },
         {
-          "company": "株式会社本気モード - 商用可能性検証プロトタイプ",
-          "position": "店舗サポート生成AIチャットボット - 試作全体を担当",
+          "company": "株式会社本気モード - 香川県",
+          "position": "フルスタック.NET開発・アーキテクチャ貢献",
+          "duration": "2024年6月 - 現在",
+          "highlight": "POS管理アプリを新規構築し、一部の分析更新処理を約1〜2分から10〜20秒へ短縮。約300MBのCSVストリーミング出力、Cognitoセッション管理、RabbitMQ連携を実装しました。AWS最適化では当初のインフラ見積もり比で月約1,300米ドルの継続削減を見込み、業務自動化とレガシー刷新にも取り組みました。"
+        },
+        {
+          "company": "株式会社本気モード - 同一職務内の実現可能性検証",
+          "position": "担当プロジェクト：店舗サポート生成AIチャットボット",
           "duration": "2024年11月 - 2025年2月",
           "highlight": "React、.NET Lambda、Amazon Bedrockを用いたRAG・ツール呼び出し試作を設計・実装。モデル制御パラメータにユーザーIDを委ねる信頼境界の問題を特定し、検索品質、セキュリティ、費用対効果を踏まえて本番化しない判断を支援しました。"
         },
@@ -102,10 +141,16 @@
           "highlight": "米国40以上の郡で利用される公共安全向けWindowsアプリを保守。大規模レガシーコードの不具合解析、性能改善、リファクタリング、L2/L3本番サポートを3,000件超のテスト環境で担当しました。"
         },
         {
-          "company": "CyverIO / Whimsy Games",
-          "position": ".NETフルスタック／バックエンド開発者",
-          "duration": "2021年4月 - 2023年1月",
-          "highlight": "契約・パートタイム案件でASP.NET Core、Angular、ゲームバックエンド機能を開発し、REST API、認証、Redis、MongoDBを扱いました。"
+          "company": "CyverIO（契約）",
+          "position": ".NETフルスタック開発者",
+          "duration": "2022年12月 - 2023年1月",
+          "highlight": "ペネトレーションテスト管理プラットフォームでASP.NET CoreとAngularの機能開発を担当し、設計とリファクタリングの議論にも参加しました。"
+        },
+        {
+          "company": "Whimsy Games（パートタイム／フリーランス）",
+          "position": "バックエンド開発者",
+          "duration": "2022年4月 - 2022年9月",
+          "highlight": "ゲームバックエンドと管理機能、REST API、軽量な要求検証を開発し、RedisとMongoDBを扱いました。"
         },
         {
           "company": "Sollers Consulting",
@@ -118,21 +163,99 @@
     "education": {
       "title": "学歴",
       "items": [
-        { "institution": "浙江師範大学（中国）", "degree": "コンピュータサイエンス 修士", "duration": "2024" },
-        { "institution": "ルブリン工科大学（ポーランド）", "degree": "コンピュータサイエンス 学士", "duration": "2020" },
-        { "institution": "チェルニーヒウ国立工科大学（ウクライナ）", "degree": "コンピュータ工学 学士", "duration": "2018" }
+        {
+          "institution": "浙江師範大学（中国）",
+          "degree": "コンピュータサイエンス 修士",
+          "duration": "2024"
+        },
+        {
+          "institution": "ルブリン工科大学（ポーランド）",
+          "degree": "コンピュータサイエンス 学士",
+          "duration": "2020"
+        },
+        {
+          "institution": "チェルニーヒウ国立工科大学（ウクライナ）",
+          "degree": "コンピュータ工学 学士",
+          "duration": "2018"
+        }
       ]
     },
     "skills": {
       "title": "コアスキル",
       "description": "単なるキーワード一覧ではなく、対応できる技術課題ごとに整理しています。",
       "groups": [
-        { "title": "アーキテクチャ・バックエンド", "items": ["C#", ".NET", "ASP.NET Core", "REST API", "分散システム", "マイクロサービス"] },
-        { "title": "クラウド・運用", "items": ["AWS Lambda", "API Gateway", "Cognito", "S3", "EC2", "EKS", "CloudWatch", "Docker"] },
-        { "title": "データ・メッセージング", "items": ["PostgreSQL", "ClickHouse", "Redis", "SQL Server", "MongoDB", "RabbitMQ", "SQS"] },
-        { "title": "AI活用", "items": ["RAG", "AIエージェント", "ツール呼び出し", "Amazon Bedrock", "MCP", "llama.cpp", "whisper.cpp", "Grok", "Gemini"] },
-        { "title": "フロントエンド・デスクトップ", "items": ["React", "TypeScript", "WPF", "Rust", "Tauri v2", "Python", "Qt"] },
-        { "title": "エンジニアリング実務", "items": ["設計トレードオフ", "性能最適化", "本番診断", "自動テスト", "CI/CD"] }
+        {
+          "title": "アーキテクチャ・バックエンド",
+          "items": [
+            "C#",
+            ".NET",
+            "ASP.NET Core",
+            "REST API",
+            "分散システム",
+            "マイクロサービス"
+          ]
+        },
+        {
+          "title": "クラウド・運用",
+          "items": [
+            "AWS Lambda",
+            "API Gateway",
+            "Cognito",
+            "S3",
+            "EC2",
+            "EKS",
+            "CloudWatch",
+            "Docker"
+          ]
+        },
+        {
+          "title": "データ・メッセージング",
+          "items": [
+            "PostgreSQL",
+            "ClickHouse",
+            "Redis",
+            "SQL Server",
+            "MongoDB",
+            "RabbitMQ",
+            "SQS"
+          ]
+        },
+        {
+          "title": "AI活用",
+          "items": [
+            "RAG",
+            "AIエージェント",
+            "ツール呼び出し",
+            "Amazon Bedrock",
+            "MCP",
+            "llama.cpp",
+            "whisper.cpp",
+            "Grok",
+            "Gemini"
+          ]
+        },
+        {
+          "title": "フロントエンド・デスクトップ",
+          "items": [
+            "React",
+            "TypeScript",
+            "WPF",
+            "Rust",
+            "Tauri v2",
+            "Python",
+            "Qt"
+          ]
+        },
+        {
+          "title": "エンジニアリング実務",
+          "items": [
+            "設計トレードオフ",
+            "性能最適化",
+            "本番診断",
+            "自動テスト",
+            "CI/CD"
+          ]
+        }
       ]
     }
   },
@@ -145,10 +268,36 @@
     "privateRepo": "ソース非公開",
     "caseStudy": "ケーススタディ",
     "items": [
-      { "num": "01", "category": "サーバーレスAI", "title": "SchoolAI", "description": ".NET 8サーバーレスバックエンド、SQS FIFOとWorker Lambdaによる非同期AI処理、WebSocket通知、Cognito認証、Amazon Bedrock推論を備えた教育プラットフォームです。" },
-      { "num": "02", "category": "OSS・音声AI", "title": "KaigiAI", "description": "RustとTauriで構築した多言語会議アシスタント。whisper.cpp音声認識、ローカル／クラウドLLM、文脈翻訳を統合し、実際の業務会議で検証しました。" },
-      { "num": "03", "category": "リアルタイムWeb", "title": "Orionyx Online", "description": "React、Node.js、PostgreSQL、Redisを基盤とし、宇宙、艦隊、戦闘、同盟、取引、管理機能を備えたブラウザ型リアルタイムMMOストラテジーです。" },
-      { "num": "04", "category": "Unity・インタラクティブ", "title": "Hollow Way", "description": "Unity 6で開発中のAndroid向けパズルゲーム。決定論的なゲームシステム、URP表現、FigmaからUnityへのUI実装、ローカライズ、収益化の境界設計、モバイルリリース要件まで一つのプロダクトとして構築しています。" }
+      {
+        "category": "商用・バックエンド",
+        "title": "POS分析・データ出力",
+        "description": "本気モードでの商用業務。一部の分析更新を約1〜2分から10〜20秒へ短縮し、約300MBのCSVストリーミング出力と当初見積もり比のAWS費用削減に取り組みました。",
+        "num": "01"
+      },
+      {
+        "num": "02",
+        "category": "個人開発・サーバーレスAI",
+        "title": "SchoolAI",
+        "description": ".NET 8サーバーレスバックエンド、SQS FIFOとWorker Lambdaによる非同期AI処理、WebSocket通知、Cognito認証、Amazon Bedrock推論を備えた教育プラットフォームです。"
+      },
+      {
+        "num": "03",
+        "category": "OSS・音声AI",
+        "title": "KaigiAI",
+        "description": "RustとTauriで構築した多言語会議アシスタント。whisper.cpp音声認識、ローカル／クラウドLLM、文脈翻訳を統合し、実際の業務会議で検証しました。"
+      },
+      {
+        "num": "04",
+        "category": "個人開発・リアルタイムWeb",
+        "title": "Orionyx Online",
+        "description": "React、Node.js、PostgreSQL、Redisを基盤とし、宇宙、艦隊、戦闘、同盟、取引、管理機能を備えたブラウザ型リアルタイムMMOストラテジーです。"
+      },
+      {
+        "num": "05",
+        "category": "個人開発・Unity",
+        "title": "Hollow Way",
+        "description": "Unity 6で開発中のAndroid向けパズルゲーム。決定論的なゲームシステム、URP表現、FigmaからUnityへのUI実装、ローカライズ、収益化の境界設計、モバイルリリース要件まで一つのプロダクトとして構築しています。"
+      }
     ]
   },
   "Contact": {

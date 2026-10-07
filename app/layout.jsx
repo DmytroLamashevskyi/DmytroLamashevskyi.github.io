@@ -10,11 +10,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   metadataBase: new URL("https://dmytrolamashevskyi.github.io"),
   title: {
-    default: "Dmytro Lamashevskyi | Senior Software & Product Engineer",
+    default: "Dmytro Lamashevskyi | Senior Software Engineer | .NET, AWS & Applied AI",
     template: "%s | Dmytro Lamashevskyi",
   },
   description:
-    "Senior Software and Product Engineer in Japan, building distributed backend, cloud, applied AI and interactive systems from business problem to production.",
+    "Senior Software Engineer in Japan with 6+ years of commercial experience in .NET, AWS, distributed systems and business automation, plus applied AI prototypes and personal products.",
   keywords: [
     "Dmytro Lamashevskyi",
     "Senior Software Engineer",
@@ -33,19 +33,19 @@ export const metadata = {
   ],
   authors: [{ name: "Dmytro Lamashevskyi" }],
   openGraph: {
-    title: "Dmytro Lamashevskyi | Senior Software & Product Engineer",
+    title: "Dmytro Lamashevskyi | Senior Software Engineer | .NET, AWS & Applied AI",
     description:
-      "Distributed systems, AWS, applied AI and interactive products — built with hands-on engineering judgment.",
+      ".NET backend engineering, AWS, distributed systems and applied AI, supported by concrete project case studies.",
     url: "https://dmytrolamashevskyi.github.io",
     siteName: "Dmytro Lamashevskyi Portfolio",
-    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Dmytro Lamashevskyi - Senior Software and Product Engineer" }],
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Dmytro Lamashevskyi - Senior Software Engineer" }],
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dmytro Lamashevskyi | Senior Software & Product Engineer",
-    description: "Distributed systems, AWS, applied AI and interactive products.",
+    title: "Dmytro Lamashevskyi | Senior Software Engineer | .NET, AWS & Applied AI",
+    description: ".NET backend engineering, AWS, distributed systems and applied AI.",
     images: ["/og.png"],
   },
 };

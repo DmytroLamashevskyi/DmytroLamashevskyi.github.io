@@ -16,9 +16,15 @@
     "eyebrow": "Based in Japan - open to senior engineering roles",
     "greeting": "Engineering systems that",
     "fullName": "hold up in practice.",
-    "role": "Senior Software / Product Engineer | .NET · AI · Cloud · Interactive Systems",
-    "tagline": "I build software products from business problem to production — distributed backend and cloud systems, applied AI, and interactive experiences. 6+ years across startups, enterprise software and client-specific solution engineering.",
-    "capabilities": [".NET & product engineering", "AWS & distributed systems", "Applied AI", "Unity & interactive systems", "Legacy modernization"],
+    "role": "Senior Software Engineer | .NET, AWS & Applied AI",
+    "tagline": "I build backend and cloud systems that make business workflows faster and easier to maintain. 6+ years of commercial experience with .NET, AWS and distributed systems, with applied AI work in prototypes and personal products.",
+    "capabilities": [
+      ".NET backend engineering",
+      "AWS & distributed systems",
+      "Data & performance",
+      "Business automation",
+      "Applied AI"
+    ],
     "downloadMasterCv": "Download master CV",
     "downloadJapaneseCv": "Download Japanese CV",
     "viewWork": "View selected work"
@@ -41,51 +47,84 @@
         "num": "01",
         "title": "Backend & Distributed Systems",
         "description": "Greenfield and evolving platforms built around clear service boundaries, APIs, asynchronous workflows, messaging and production diagnostics.",
-        "focus": ["C# / .NET", "REST APIs", "RabbitMQ", "Background processing"]
+        "focus": [
+          "C# / .NET",
+          "REST APIs",
+          "RabbitMQ",
+          "Background processing"
+        ]
       },
       {
         "num": "02",
         "title": "AWS & Cloud Architecture",
         "description": "Serverless and container-based AWS systems, authentication, operational visibility and infrastructure decisions grounded in workload behavior and cost.",
-        "focus": ["Lambda", "API Gateway", "Cognito", "EKS / EC2", "CloudWatch"]
+        "focus": [
+          "Lambda",
+          "API Gateway",
+          "Cognito",
+          "EKS / EC2",
+          "CloudWatch"
+        ]
       },
       {
         "num": "03",
         "title": "Data & Performance",
         "description": "Transactional and analytical data flows, constrained query interfaces, caching, batching, large exports and performance work across heterogeneous stores.",
-        "focus": ["PostgreSQL", "ClickHouse", "Redis", "SQL Server"]
+        "focus": [
+          "PostgreSQL",
+          "ClickHouse",
+          "Redis",
+          "SQL Server"
+        ]
       },
       {
         "num": "04",
         "title": "Applied AI Solutions",
         "description": "Commercial prototypes and personal systems using RAG, agents, tool calling, MCP, speech recognition and local or cloud LLM inference - without confusing prototypes with production.",
-        "focus": ["Amazon Bedrock", "RAG", "MCP", "whisper.cpp", "llama.cpp"]
+        "focus": [
+          "Amazon Bedrock",
+          "RAG",
+          "MCP",
+          "whisper.cpp",
+          "llama.cpp"
+        ]
       }
     ]
   },
   "Resume": {
     "eyebrow": "Professional profile",
-    "title": "Experience shaped by systems, not titles",
+    "title": "Backend engineering, architecture and practical results",
     "description": "A concise view of the work behind the four-page master CV: production platforms, solution engineering, enterprise debugging and recent applied AI architecture.",
     "downloadMaster": "Download master CV",
     "downloadJapanese": "Download Japanese CV",
     "about": {
-      "title": "Current positioning",
-      "description": "Senior Software Engineer and Solution Architect based in Kagawa, Japan. My primary identity is backend, distributed systems and cloud engineering; applied AI is a recent extension of that foundation.",
-      "highlights": ["6+ years of professional experience", "Hands-on architecture and implementation", "English, Polish, Ukrainian, Russian and Japanese N4"]
+      "title": "About me",
+      "description": "Senior Software Engineer based in Kagawa, Japan, specializing in .NET backend systems, AWS and distributed data workflows. I work across requirements, architecture, implementation and production support. My applied AI experience includes commercial feasibility work and personal products.",
+      "highlights": [
+        "6+ years of professional experience",
+        "Hands-on architecture and implementation",
+        "English, Polish, Ukrainian, Russian and Japanese N4",
+        "AWS Certified AI Practitioner (Sep 2026–Sep 2029)"
+      ]
     },
     "experience": {
       "title": "Professional experience",
       "items": [
         {
-          "company": "Honki Mode - Japan",
-          "position": "Backend / Full-Stack Developer, Architecture Contributor",
-          "duration": "Jun 2024 - Present",
-          "highlight": "Built a greenfield POS administration application; designed ClickHouse analytics, 300 MB streaming exports, Cognito session handling and RabbitMQ integration. Contributed to EKS/EC2 cost optimization with an estimated recurring reduction of about USD 1,300 per month versus the original estimate. Also delivered client-specific Forward Deploy automation and modernization solutions."
+          "company": "Honki Mode - Kagawa, Japan",
+          "position": "AI Solutions Architect & Tech Consultant",
+          "duration": "Mar 2026 - Present",
+          "highlight": "Client-facing solution engineering with Forward Deployed Engineer responsibilities. Built and extended a Python / Qt finance tool with estimated savings of 1-2 person-days per month; designed a custom Django ERP with centralized pricing and authenticated MCP endpoints, and a read-only legacy ERP integration. ERP and modernization projects remain under active development."
         },
         {
-          "company": "Honki Mode - commercial feasibility prototype",
-          "position": "Store-Support GenAI Chatbot - Prototype Owner",
+          "company": "Honki Mode - Kagawa, Japan",
+          "position": "Full-Stack .NET Developer, Architecture Contributor",
+          "duration": "Jun 2024 - Present",
+          "highlight": "Built a greenfield POS administration application and reduced selected analytical update latency from approximately 1-2 minutes to 10-20 seconds. Implemented approximately 300 MB streaming CSV exports, Cognito session handling and RabbitMQ integration. Contributed to an estimated recurring AWS cost reduction of about USD 1,300 per month versus the original infrastructure estimate; also delivered business automation and legacy modernization."
+        },
+        {
+          "company": "Honki Mode - feasibility prototype within the same role",
+          "position": "Selected project: Store-Support GenAI Chatbot",
           "duration": "Nov 2024 - Feb 2025",
           "highlight": "Designed and implemented a React, .NET Lambda and Amazon Bedrock RAG prototype with tool calling. Identified a model-controlled identity trust-boundary flaw and helped evaluate the decision not to productionize the system because retrieval, security and cost-to-impact were unfavorable."
         },
@@ -102,10 +141,16 @@
           "highlight": "Maintained a mission-critical public-safety Windows application used across more than 40 U.S. counties, covering complex legacy debugging, performance, refactoring and L2/L3 production support in a 3,000+ test environment."
         },
         {
-          "company": "CyverIO / Whimsy Games",
-          "position": ".NET Full-Stack & Backend Developer",
-          "duration": "Apr 2021 - Jan 2023",
-          "highlight": "Delivered ASP.NET Core, Angular and game-backend functionality across contract and part-time engagements, working with REST APIs, authentication, Redis and MongoDB."
+          "company": "CyverIO (Contract)",
+          "position": ".NET Full-Stack Developer",
+          "duration": "Dec 2022 - Jan 2023",
+          "highlight": "Delivered ASP.NET Core and Angular functionality for a penetration-testing management platform, contributing to architecture and refactoring discussions."
+        },
+        {
+          "company": "Whimsy Games (Part-Time / Freelance)",
+          "position": "Backend Developer",
+          "duration": "Apr 2022 - Sep 2022",
+          "highlight": "Built game-backend and administration functionality, REST APIs and lightweight request validation using Redis and MongoDB."
         },
         {
           "company": "Sollers Consulting",
@@ -118,21 +163,99 @@
     "education": {
       "title": "Education",
       "items": [
-        { "institution": "Zhejiang Normal University, China", "degree": "Master of Science in Computer Science", "duration": "2024" },
-        { "institution": "Lublin University of Technology, Poland", "degree": "Bachelor of Science in Computer Science", "duration": "2020" },
-        { "institution": "Chernihiv National University of Technology, Ukraine", "degree": "Bachelor of Science in Computer Engineering", "duration": "2018" }
+        {
+          "institution": "Zhejiang Normal University, China",
+          "degree": "Master of Science in Computer Science",
+          "duration": "2024"
+        },
+        {
+          "institution": "Lublin University of Technology, Poland",
+          "degree": "Bachelor of Science in Computer Science",
+          "duration": "2020"
+        },
+        {
+          "institution": "Chernihiv National University of Technology, Ukraine",
+          "degree": "Bachelor of Science in Computer Engineering",
+          "duration": "2018"
+        }
       ]
     },
     "skills": {
       "title": "Core capabilities",
       "description": "Grouped by the engineering problems they support, not as an exhaustive keyword inventory.",
       "groups": [
-        { "title": "Architecture & Backend", "items": ["C#", ".NET", "ASP.NET Core", "REST APIs", "Distributed systems", "Microservices"] },
-        { "title": "Cloud & Operations", "items": ["AWS Lambda", "API Gateway", "Cognito", "S3", "EC2", "EKS", "CloudWatch", "Docker"] },
-        { "title": "Data & Messaging", "items": ["PostgreSQL", "ClickHouse", "Redis", "SQL Server", "MongoDB", "RabbitMQ", "SQS"] },
-        { "title": "Applied AI", "items": ["RAG", "AI agents", "Tool calling", "Amazon Bedrock", "MCP", "llama.cpp", "whisper.cpp", "Grok", "Gemini"] },
-        { "title": "Frontend & Desktop", "items": ["React", "TypeScript", "WPF", "Rust", "Tauri v2", "Python", "Qt"] },
-        { "title": "Engineering Practice", "items": ["Architecture trade-offs", "Performance optimization", "Production diagnostics", "Automated testing", "CI/CD"] }
+        {
+          "title": "Architecture & Backend",
+          "items": [
+            "C#",
+            ".NET",
+            "ASP.NET Core",
+            "REST APIs",
+            "Distributed systems",
+            "Microservices"
+          ]
+        },
+        {
+          "title": "Cloud & Operations",
+          "items": [
+            "AWS Lambda",
+            "API Gateway",
+            "Cognito",
+            "S3",
+            "EC2",
+            "EKS",
+            "CloudWatch",
+            "Docker"
+          ]
+        },
+        {
+          "title": "Data & Messaging",
+          "items": [
+            "PostgreSQL",
+            "ClickHouse",
+            "Redis",
+            "SQL Server",
+            "MongoDB",
+            "RabbitMQ",
+            "SQS"
+          ]
+        },
+        {
+          "title": "Applied AI",
+          "items": [
+            "RAG",
+            "AI agents",
+            "Tool calling",
+            "Amazon Bedrock",
+            "MCP",
+            "llama.cpp",
+            "whisper.cpp",
+            "Grok",
+            "Gemini"
+          ]
+        },
+        {
+          "title": "Frontend & Desktop",
+          "items": [
+            "React",
+            "TypeScript",
+            "WPF",
+            "Rust",
+            "Tauri v2",
+            "Python",
+            "Qt"
+          ]
+        },
+        {
+          "title": "Engineering Practice",
+          "items": [
+            "Architecture trade-offs",
+            "Performance optimization",
+            "Production diagnostics",
+            "Automated testing",
+            "CI/CD"
+          ]
+        }
       ]
     }
   },
@@ -145,10 +268,36 @@
     "privateRepo": "Private source",
     "caseStudy": "Read case study",
     "items": [
-      { "num": "01", "category": "Serverless AI", "title": "SchoolAI", "description": "An education platform with a .NET 8 serverless backend, asynchronous AI jobs via SQS FIFO and worker Lambdas, WebSocket updates, Cognito authentication and Amazon Bedrock inference." },
-      { "num": "02", "category": "Open source / Speech AI", "title": "KaigiAI", "description": "A multilingual meeting assistant built with Rust and Tauri, combining whisper.cpp speech recognition, local and cloud LLM providers, context-aware translation and real-world meeting validation." },
-      { "num": "03", "category": "Real-time web system", "title": "Orionyx Online", "description": "A browser-based space MMO strategy game with configurable universes, progression, fleets, combat, alliances and administration tooling across a React, Node.js, PostgreSQL and Redis architecture." },
-      { "num": "04", "category": "Unity / Interactive", "title": "Hollow Way", "description": "A Unity 6 Android puzzle game built as a complete interactive product: deterministic gameplay systems, URP visuals, Figma-to-Unity UI, localization, monetization boundaries and mobile release constraints." }
+      {
+        "category": "Commercial / Backend",
+        "title": "POS Analytics & Data Exports",
+        "description": "Commercial work at Honki Mode: selected analytical updates improved from approximately 1-2 minutes to 10-20 seconds, approximately 300 MB streaming CSV exports, and an estimated AWS cost reduction versus the original infrastructure estimate.",
+        "num": "01"
+      },
+      {
+        "num": "02",
+        "category": "Personal project / Serverless AI",
+        "title": "SchoolAI",
+        "description": "An education platform with a .NET 8 serverless backend, asynchronous AI jobs via SQS FIFO and worker Lambdas, WebSocket updates, Cognito authentication and Amazon Bedrock inference."
+      },
+      {
+        "num": "03",
+        "category": "Open source / Speech AI",
+        "title": "KaigiAI",
+        "description": "A multilingual meeting assistant built with Rust and Tauri, combining whisper.cpp speech recognition, local and cloud LLM providers, context-aware translation and real-world meeting validation."
+      },
+      {
+        "num": "04",
+        "category": "Personal project / Real-time web",
+        "title": "Orionyx Online",
+        "description": "A browser-based space MMO strategy game with configurable universes, progression, fleets, combat, alliances and administration tooling across a React, Node.js, PostgreSQL and Redis architecture."
+      },
+      {
+        "num": "05",
+        "category": "Personal project / Unity",
+        "title": "Hollow Way",
+        "description": "A Unity 6 Android puzzle game built as a complete interactive product: deterministic gameplay systems, URP visuals, Figma-to-Unity UI, localization, monetization boundaries and mobile release constraints."
+      }
     ]
   },
   "Contact": {

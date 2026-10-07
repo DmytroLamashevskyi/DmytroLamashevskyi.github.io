@@ -30,9 +30,6 @@ const Resume = () => {
               <Button asChild size="lg" className="flex gap-2">
                 <a href="/assets/Lamashevskyi_Dmytro_CV_Master_4P_ENG.pdf" download><FiDownload />{t("downloadMaster")}</a>
               </Button>
-              <a href="/assets/Lamashevskyi_Dmytro_CV_2026_JPN.pdf" download className="text-xs text-white/45 underline-offset-4 hover:text-accent hover:underline">
-                {t("downloadJapanese")}
-              </a>
             </div>
             <div className="surface-card mt-8 p-6">
               <h2 className="font-bold">{t("about.title")}</h2>

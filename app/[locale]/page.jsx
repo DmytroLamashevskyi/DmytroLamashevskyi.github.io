@@ -53,9 +53,6 @@ const Home = () => {
                 iconStyles="w-10 h-10 border border-white/15 rounded-full flex justify-center items-center text-white/70 text-base hover:border-accent hover:text-accent transition-colors"
               />
             </div>
-            <a href="/assets/Lamashevskyi_Dmytro_CV_2026_JPN.pdf" download className="mt-5 inline-flex text-xs text-white/45 underline-offset-4 hover:text-accent hover:underline">
-              {t("downloadJapaneseCv")}
-            </a>
           </motion.div>
           <div className="order-1 flex justify-center xl:order-none xl:justify-end">
             <Photo />

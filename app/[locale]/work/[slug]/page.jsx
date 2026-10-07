@@ -33,8 +33,8 @@ export default async function CaseStudyPage({ params }) {
   const study = getCaseStudy(locale, slug);
   if (!study) notFound();
   const labels = locale === "ja"
-    ? { back: "プロジェクト一覧", role: "担当", stack: "技術スタック", next: "次の検証", private: "ソース非公開" }
-    : { back: "Selected work", role: "Role", stack: "Technology", next: "Next validation", private: "Private source" };
+    ? { back: "プロジェクト一覧", role: "担当", stack: "技術スタック", next: "検討・確認事項", private: "公開範囲" }
+    : { back: "Selected work", role: "Role", stack: "Technology", next: "Further discussion", private: "Public scope" };
 
   return (
     <article className="py-12 xl:py-20">
