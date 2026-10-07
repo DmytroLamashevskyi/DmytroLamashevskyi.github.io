@@ -74,10 +74,10 @@ const Work = () => {
                 </div>
                 {project.caseStudy && <div aria-hidden="true" className="my-7 rounded-xl border border-white/10 bg-black/20 p-4">
                   <p className="mb-3 text-[10px] uppercase tracking-widest text-white/40">{locale === "ja" ? "処理フローの概要" : "Workflow preview"}</p>
-                  <div className="flex items-center gap-2">
-                    {getDiagramPreview(locale, project.caseStudy).map((title, stepIndex) => <div key={title} className="flex min-w-0 flex-1 items-center gap-2">
-                      {stepIndex > 0 && <span className="shrink-0 text-accent/50">→</span>}
-                      <span className="flex min-h-20 min-w-0 flex-1 items-center justify-center rounded-lg border border-accent/20 bg-accent/5 px-2 py-3 text-center text-[10px] leading-4 text-white/75 [overflow-wrap:anywhere]">{title}</span>
+                  <div className="flex items-center gap-6">
+                    {getDiagramPreview(locale, project.caseStudy).map((title, stepIndex) => <div key={title} className="relative min-w-0 flex-1">
+                      {stepIndex > 0 && <span className="absolute -left-5 top-1/2 -translate-y-1/2 text-accent/50">→</span>}
+                      <span className="flex min-h-20 w-full items-center justify-center rounded-lg border border-accent/20 bg-accent/5 px-1 py-3 text-center text-[10px] leading-4 text-white/75 [overflow-wrap:anywhere]">{title}</span>
                     </div>)}
                   </div>
                 </div>}
