@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { useLocale, useTranslations } from "next-intl";
+import { getDiagramPreview } from "@/lib/project-diagrams";
 
 const projectData = [
   {
@@ -71,7 +72,16 @@ const Work = () => {
                 <div className="flex items-start justify-between gap-4 text-xs uppercase tracking-[0.16em] text-white/45">
                   <span className="shrink-0">{project.num}</span><span className="text-right leading-4">{project.category}</span>
                 </div>
-                <div className="mt-20">
+                {project.caseStudy && <div aria-hidden="true" className="my-7 rounded-xl border border-white/10 bg-black/20 p-4">
+                  <p className="mb-3 text-[10px] uppercase tracking-widest text-white/40">{locale === "ja" ? "処理フローの概要" : "Workflow preview"}</p>
+                  <div className="flex items-center gap-2">
+                    {getDiagramPreview(locale, project.caseStudy).map((title, stepIndex) => <div key={title} className="flex min-w-0 flex-1 items-center gap-2">
+                      {stepIndex > 0 && <span className="shrink-0 text-accent/50">→</span>}
+                      <span className="flex min-h-20 min-w-0 flex-1 items-center justify-center rounded-lg border border-accent/20 bg-accent/5 px-2 py-3 text-center text-[10px] leading-4 text-white/75 [overflow-wrap:anywhere]">{title}</span>
+                    </div>)}
+                  </div>
+                </div>}
+                <div className={project.caseStudy ? "mt-1" : "mt-20"}>
                   <h2 className="text-3xl font-bold">{project.title}</h2>
                   <p className="mt-4 text-sm leading-7 text-white/55">{project.description}</p>
                 </div>

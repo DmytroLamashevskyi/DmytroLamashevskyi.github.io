@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { BsArrowLeft, BsArrowUpRight } from "react-icons/bs";
 import { caseStudySlugs, getCaseStudy } from "@/lib/case-studies";
 import { locales } from "@/i18n/config";
+import ArchitectureDiagram from "@/components/ArchitectureDiagram";
+import { getProjectDiagrams } from "@/lib/project-diagrams";
 
 export const dynamicParams = false;
 
@@ -32,6 +34,7 @@ export default async function CaseStudyPage({ params }) {
   const { locale, slug } = await params;
   const study = getCaseStudy(locale, slug);
   if (!study) notFound();
+  const diagrams = getProjectDiagrams(locale, slug);
   const labels = locale === "ja"
     ? { back: "プロジェクト一覧", role: "担当", stack: "技術スタック", next: "検討・確認事項", private: "公開範囲" }
     : { back: "Selected work", role: "Role", stack: "Technology", next: "Further discussion", private: "Public scope" };
@@ -82,14 +85,14 @@ export default async function CaseStudyPage({ params }) {
             <h2 className="h3">{study.architecture.title}</h2>
             <p className="mt-4 text-sm leading-7 text-white/60 sm:text-base">{study.architecture.intro}</p>
           </div>
-          <div className="mt-8 grid gap-3 md:grid-cols-3 xl:grid-cols-6">
+          {diagrams.length > 0 ? <div className="mt-8 space-y-6">{diagrams.map((diagram) => <ArchitectureDiagram key={diagram.id} diagram={diagram} locale={locale} slug={slug} />)}</div> : <div className="mt-8 grid gap-3 md:grid-cols-3 xl:grid-cols-6">
             {study.architecture.flow.map((step, index) => (
               <div key={step} className="relative rounded-xl border border-accent/20 bg-accent/[0.055] px-4 py-5 text-sm font-semibold text-white/80">
                 <span className="mb-3 block text-[10px] tracking-[0.18em] text-accent/65">0{index + 1}</span>
                 {step}
               </div>
             ))}
-          </div>
+          </div>}
           <ul className="mt-8 grid gap-4 text-sm leading-7 text-white/60 lg:grid-cols-3">
             {study.architecture.notes.map((note) => <li key={note} className="border-l border-accent/40 pl-4">{note}</li>)}
           </ul>

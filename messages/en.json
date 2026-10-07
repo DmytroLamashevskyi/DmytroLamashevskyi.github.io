@@ -262,7 +262,7 @@
   "Work": {
     "eyebrow": "Selected systems",
     "title": "Projects where architecture meets a real constraint",
-    "description": "A focused selection spanning serverless AI, local-first speech systems and real-time product architecture. Commercial work remains summarized in the resume where client confidentiality requires it.",
+    "description": "Selected commercial backend work and personal products, from POS analytics and data exports to serverless AI and desktop speech processing. Explore the workflows, engineering decisions and results in each case study.",
     "liveProject": "Open product",
     "githubRepo": "View source",
     "privateRepo": "Private source",
