@@ -50,10 +50,37 @@ export const metadata = {
   },
 };
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Dmytro Lamashevskyi",
+  url: "https://dmytrolamashevskyi.github.io",
+  jobTitle: "Senior Software Engineer",
+  worksFor: {
+    "@type": "Organization",
+    name: "Honki Mode",
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressRegion: "Kagawa",
+    addressCountry: "JP",
+  },
+  sameAs: [
+    "https://www.linkedin.com/in/lamashevski/",
+    "https://github.com/DmytroLamashevskyi",
+    "https://lamashevskyi.itch.io/",
+    "https://school-ai.jp",
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${jetbrainsMono.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         {children}
       </body>
     </html>
