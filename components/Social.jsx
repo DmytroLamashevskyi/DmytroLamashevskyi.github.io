@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaItchIo } from "react-icons/fa";
 
 const socials = [
   { icon: <FaGithub />, path: "https://github.com/DmytroLamashevskyi", label: "GitHub" },
   { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/lamashevski/", label: "LinkedIn" },
+  { icon: <FaItchIo />, path: "https://lamashevskyi.itch.io/", label: "itch.io" },
 ];
 
 const Social = ({ containerStyles, iconStyles }) => (
